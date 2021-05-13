@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Electrician Handbook</string>
+    <string name="send_to_mail">НАПИСАТЬ НА ПОЧТУ</string>
+    <string name="share_app">ПОДЕЛИСЬ С ДРУГОМ</string>
+    <string name="like">ОЦЕНИТЬ</string>
+    <string name="settings">НАСТРОЙКИ</string>
+    <string name="errorSend">"Нет приложения для отправки письмо"</string>
+    <string-array name="mail_address_programmers">
+        <item>armen0993@mail.ru</item>
+        <item>avtandilyan1993t@gmail.com</item>
+    </string-array>
 </resources>
