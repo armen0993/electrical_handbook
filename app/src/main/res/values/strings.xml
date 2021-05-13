@@ -6,7 +6,7 @@
     <string name="settings">НАСТРОЙКИ</string>
     <string name="errorSend">"Нет приложения для отправки письмо"</string>
     <string-array name="mail_address_programmers">
-        <item>armen0993@mail.ru</item>
+        <item>armenbeglaryan993@gmail.com</item>
         <item>avtandilyan1993t@gmail.com</item>
     </string-array>
 </resources>
