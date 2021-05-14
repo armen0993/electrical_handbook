@@ -6,13 +6,243 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/viewCalc"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
+        app:layout_constraintBottom_toTopOf="@id/viewSchema"
+        app:layout_constraintEnd_toStartOf="@id/viewTheory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageCalc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/calc"
+        app:layout_constraintBottom_toTopOf="@id/textCalc"
+        app:layout_constraintEnd_toEndOf="@id/viewCalc"
+        app:layout_constraintStart_toStartOf="@id/viewCalc"
+        app:layout_constraintTop_toTopOf="@id/viewCalc" />
+
     <TextView
+        android:id="@+id/textCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Калькулятор"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewCalc"
+        app:layout_constraintEnd_toEndOf="@+id/viewCalc"
+        app:layout_constraintStart_toStartOf="@+id/viewCalc"
+        app:layout_constraintTop_toBottomOf="@+id/imageCalc" />
+
+    <View
+        android:id="@+id/viewTheory"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/viewCalc"
+        app:layout_constraintTop_toTopOf="@id/viewCalc" />
+
+    <ImageView
+        android:id="@+id/imageTheory"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@id/textTheory"
+        app:layout_constraintEnd_toEndOf="@id/viewTheory"
+        app:layout_constraintStart_toStartOf="@id/viewTheory"
+        app:layout_constraintTop_toTopOf="@id/viewTheory"
+        app:srcCompat="@drawable/theory" />
+
+    <TextView
+        android:id="@+id/textTheory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Теория"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewTheory"
+        app:layout_constraintEnd_toEndOf="@+id/viewTheory"
+        app:layout_constraintStart_toStartOf="@+id/viewTheory"
+        app:layout_constraintTop_toBottomOf="@+id/imageTheory" />
+
+
+    <View
+        android:id="@+id/viewSchema"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
+        app:layout_constraintBottom_toTopOf="@id/viewTable"
+        app:layout_constraintStart_toStartOf="@id/viewCalc"
+        app:layout_constraintTop_toBottomOf="@id/viewCalc" />
+
+    <ImageView
+        android:id="@+id/imageSchema"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/schema"
+        app:layout_constraintBottom_toTopOf="@id/textSchema"
+        app:layout_constraintEnd_toEndOf="@id/viewSchema"
+        app:layout_constraintStart_toStartOf="@id/viewSchema"
+        app:layout_constraintTop_toTopOf="@id/viewSchema" />
+
+    <TextView
+        android:id="@+id/textSchema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Схемы"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewSchema"
+        app:layout_constraintEnd_toEndOf="@+id/viewSchema"
+        app:layout_constraintStart_toStartOf="@+id/viewSchema"
+        app:layout_constraintTop_toBottomOf="@+id/imageSchema" />
+
+    <View
+        android:id="@+id/viewTable"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
+        app:layout_constraintBottom_toTopOf="@id/viewExit"
+        app:layout_constraintStart_toStartOf="@id/viewCalc"
+        app:layout_constraintTop_toBottomOf="@id/viewSchema"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageTable"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/table"
+        app:layout_constraintBottom_toTopOf="@id/textTable"
+        app:layout_constraintEnd_toEndOf="@id/viewTable"
+        app:layout_constraintStart_toStartOf="@id/viewTable"
+        app:layout_constraintTop_toTopOf="@id/viewTable" />
+
+    <TextView
+        android:id="@+id/textTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Таблицы"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewTable"
+        app:layout_constraintEnd_toEndOf="@+id/viewTable"
+        app:layout_constraintStart_toStartOf="@+id/viewTable"
+        app:layout_constraintTop_toBottomOf="@+id/imageTable" />
+
+    <View
+        android:id="@+id/viewStandarts"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
+        app:layout_constraintBottom_toTopOf="@id/viewBooks"
+        app:layout_constraintEnd_toEndOf="@+id/viewTheory"
+        app:layout_constraintStart_toStartOf="@id/viewTheory"
+        app:layout_constraintTop_toBottomOf="@id/viewTheory" />
+
+    <ImageView
+        android:id="@+id/imageStandarts"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/standarts"
+        app:layout_constraintBottom_toTopOf="@id/textStandarts"
+        app:layout_constraintEnd_toEndOf="@id/viewStandarts"
+        app:layout_constraintStart_toStartOf="@id/viewStandarts"
+        app:layout_constraintTop_toTopOf="@id/viewStandarts" />
+
+    <TextView
+        android:id="@+id/textStandarts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Стандарты"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewStandarts"
+        app:layout_constraintEnd_toEndOf="@+id/viewStandarts"
+        app:layout_constraintStart_toStartOf="@+id/viewStandarts"
+        app:layout_constraintTop_toBottomOf="@+id/imageStandarts" />
+
+    <View
+        android:id="@+id/viewBooks"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
+        app:layout_constraintBottom_toTopOf="@id/viewExit"
+        app:layout_constraintEnd_toEndOf="@id/viewTheory"
+        app:layout_constraintStart_toStartOf="@id/viewTheory"
+        app:layout_constraintTop_toBottomOf="@id/viewStandarts" />
+
+    <ImageView
+        android:id="@+id/imageBooks"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/book"
+        app:layout_constraintBottom_toTopOf="@id/textBooks"
+        app:layout_constraintEnd_toEndOf="@id/viewBooks"
+        app:layout_constraintStart_toStartOf="@id/viewBooks"
+        app:layout_constraintTop_toTopOf="@id/viewBooks" />
+
+    <TextView
+        android:id="@+id/textBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Литература"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewBooks"
+        app:layout_constraintEnd_toEndOf="@+id/viewBooks"
+        app:layout_constraintStart_toStartOf="@+id/viewBooks"
+        app:layout_constraintTop_toBottomOf="@+id/imageBooks" />
+
+    <View
+        android:id="@+id/viewExit"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:background="@color/backgroundView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@id/viewTheory"
+        app:layout_constraintStart_toStartOf="@id/viewCalc"
+        app:layout_constraintTop_toBottomOf="@id/viewTable" />
+
+    <ImageView
+        android:id="@+id/imageExit"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/exit"
+        app:layout_constraintBottom_toTopOf="@id/textExit"
+        app:layout_constraintEnd_toEndOf="@id/viewExit"
+        app:layout_constraintStart_toStartOf="@id/viewExit"
+        app:layout_constraintTop_toTopOf="@id/viewExit" />
+
+    <TextView
+        android:id="@+id/textExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выход"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/viewExit"
+        app:layout_constraintEnd_toEndOf="@+id/viewExit"
+        app:layout_constraintStart_toStartOf="@+id/viewExit"
+        app:layout_constraintTop_toBottomOf="@+id/imageExit" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
