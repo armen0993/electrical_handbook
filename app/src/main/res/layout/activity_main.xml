@@ -32,7 +32,7 @@
         android:id="@+id/textCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Калькулятор"
+        android:text="@string/calculator"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -64,7 +64,7 @@
         android:id="@+id/textTheory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Теория"
+        android:text="@string/theory"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -98,7 +98,7 @@
         android:id="@+id/textSchema"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Схемы"
+        android:text="@string/schemes"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -133,7 +133,7 @@
         android:id="@+id/textTable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Таблицы"
+        android:text="@string/tables"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -143,7 +143,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageTable" />
 
     <View
-        android:id="@+id/viewStandarts"
+        android:id="@+id/viewStandards"
         android:layout_width="150dp"
         android:layout_height="140dp"
         android:background="@color/backgroundView"
@@ -153,28 +153,28 @@
         app:layout_constraintTop_toBottomOf="@id/viewTheory" />
 
     <ImageView
-        android:id="@+id/imageStandarts"
+        android:id="@+id/imageStandards"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/standarts"
-        app:layout_constraintBottom_toTopOf="@id/textStandarts"
-        app:layout_constraintEnd_toEndOf="@id/viewStandarts"
-        app:layout_constraintStart_toStartOf="@id/viewStandarts"
-        app:layout_constraintTop_toTopOf="@id/viewStandarts" />
+        android:src="@drawable/standards"
+        app:layout_constraintBottom_toTopOf="@id/textStandards"
+        app:layout_constraintEnd_toEndOf="@id/viewStandards"
+        app:layout_constraintStart_toStartOf="@id/viewStandards"
+        app:layout_constraintTop_toTopOf="@id/viewStandards" />
 
     <TextView
-        android:id="@+id/textStandarts"
+        android:id="@+id/textStandards"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Стандарты"
+        android:text="@string/standards"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewStandarts"
-        app:layout_constraintEnd_toEndOf="@+id/viewStandarts"
-        app:layout_constraintStart_toStartOf="@+id/viewStandarts"
-        app:layout_constraintTop_toBottomOf="@+id/imageStandarts" />
+        app:layout_constraintBottom_toBottomOf="@id/viewStandards"
+        app:layout_constraintEnd_toEndOf="@+id/viewStandards"
+        app:layout_constraintStart_toStartOf="@+id/viewStandards"
+        app:layout_constraintTop_toBottomOf="@+id/imageStandards" />
 
     <View
         android:id="@+id/viewBooks"
@@ -184,7 +184,7 @@
         app:layout_constraintBottom_toTopOf="@id/viewExit"
         app:layout_constraintEnd_toEndOf="@id/viewTheory"
         app:layout_constraintStart_toStartOf="@id/viewTheory"
-        app:layout_constraintTop_toBottomOf="@id/viewStandarts" />
+        app:layout_constraintTop_toBottomOf="@id/viewStandards" />
 
     <ImageView
         android:id="@+id/imageBooks"
@@ -201,7 +201,7 @@
         android:id="@+id/textBooks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Литература"
+        android:text="@string/literature"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -235,7 +235,7 @@
         android:id="@+id/textExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выход"
+        android:text="@string/output"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"

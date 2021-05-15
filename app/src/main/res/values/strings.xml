@@ -5,6 +5,13 @@
     <string name="like">ОЦЕНИТЬ</string>
     <string name="settings">НАСТРОЙКИ</string>
     <string name="errorSend">"Нет приложения для отправки письмо"</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="theory">Теория</string>
+    <string name="schemes">Схемы</string>
+    <string name="tables">Таблицы</string>
+    <string name="standards">Стандарты</string>
+    <string name="literature">Литература</string>
+    <string name="output">Выход</string>
     <string-array name="mail_address_programmers">
         <item>armenbeglaryan993@gmail.com</item>
         <item>avtandilyan1993t@gmail.com</item>
