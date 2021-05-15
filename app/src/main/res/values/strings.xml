@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Electrician Handbook</string>
+    <string name="app_name">Справочник электрика</string>
     <string name="send_to_mail">НАПИСАТЬ НА ПОЧТУ</string>
     <string name="share_app">ПОДЕЛИСЬ С ДРУГОМ</string>
     <string name="like">ОЦЕНИТЬ</string>
@@ -12,8 +12,40 @@
     <string name="standards">Стандарты</string>
     <string name="literature">Литература</string>
     <string name="output">Выход</string>
+    <string name="theory_title_1">Базовые понятия</string>
+    <string name="theory_title_2">Законы и правила</string>
+    <string name="theory_title_3">Параллельное и последовательное соединение</string>
+    <string name="theory_title_4">Освещение</string>
+    <string name="theory_title_5">Кабель и провода</string>
+    <string name="theory_title_6">Электрические станции и подстанции</string>
+    <string name="theory_title_7">Измерительные приборы</string>
+    <string name="theory_title_8">Электромеханические \nпреобразователи</string>
+    <string name="theory_title_9">Заземление</string>
+    <string name="theory_title_10">Кароткое замыкание</string>
+    <string name="theory_title_11">Устойства защиты и автоматики</string>
+    <string name="theory_title_12">Защита IP</string>
+    <string name="theory_title_13">Инструменты</string>
+    <string name="theory_title_14">Розетки и вилки по всему миру</string>
+    <string name="theory_description_1">.Напряжение\n.Ток\n.Сопративление\n.Мощность</string>
+    <string name="theory_description_2">.Закон Ома\n.Правила Кирхофа\n.Закон Джоуля-Ленца
+        \n.Закон Кулона\n.Мнемонические правила</string>
+    <string name="theory_description_3">.Виды ламп освещения\n.Виды цоколей\n.Люмены и люксы
+        \n.Цветовая температура\n.Светодиодная лента</string>
+    <string name="theory_description_4">.Цветовая маркировка\n.Расшифровка сокращений
+        \n.Виды кабелей и проводов\n.Соединение проводов\n.Выбор сечения</string>
+    <string name="theory_description_5">.Вольтметер,амперметр,омметр\n.Мультиметр
+        \n.Токоизмерительные клещи\n.Электрический счетчик</string>
+    <string name="theory_description_6">.Трансформатор\n.Двигатель\n.Генератор</string>
+    <string name="theory_description_7">.Системы заземления\n.СУП</string>
+    <string name="theory_description_8">.Автоматический выключатель\n.УЗО\n.АВДТ\n.УЗИП
+        \n.Реле напряжения\n.Магнитный пускатель\n.Предохранители и пробки</string>
+
+
     <string-array name="mail_address_programmers">
         <item>armenbeglaryan993@gmail.com</item>
         <item>avtandilyan1993t@gmail.com</item>
     </string-array>
+
+
+
 </resources>

@@ -8,18 +8,24 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import android.widget.Toolbar
 import com.electrical.myapplication.databinding.ActivityMainBinding
 import com.electrical.myapplication.theory.TheoryActivity
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
         binding.imageCalc.setOnClickListener {
             val toast = Toast.makeText(this,"Selected",Toast.LENGTH_SHORT).show()
         }
         binding.imageTheory.setOnClickListener(){
+
+
             val intentTheory = Intent(this,TheoryActivity::class.java)
             startActivity(intentTheory)
         }

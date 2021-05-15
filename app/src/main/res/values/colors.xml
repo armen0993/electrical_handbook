@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backgroundView">#16344C</color>
-    <color name="backgroundRecycler">#C459C8</color>
+    <color name="backgroundRecycler">#BB9EED</color>
+    <color name="backgroundColor">#52A9ED</color>
 </resources>
