@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_first_activity"
     tools:context=".MainActivity">
-
-    <View
-        android:id="@+id/viewCalc"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintBottom_toTopOf="@id/viewSchema"
-        app:layout_constraintEnd_toStartOf="@id/viewTheory"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView
@@ -23,10 +14,10 @@
         android:layout_height="100dp"
         android:clickable="true"
         android:src="@drawable/calc"
-        app:layout_constraintBottom_toTopOf="@id/textCalc"
-        app:layout_constraintEnd_toEndOf="@id/viewCalc"
-        app:layout_constraintStart_toStartOf="@id/viewCalc"
-        app:layout_constraintTop_toTopOf="@id/viewCalc" />
+        app:layout_constraintBottom_toTopOf="@id/imageSchema"
+        app:layout_constraintEnd_toStartOf="@id/imageTheory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textCalc"
@@ -36,28 +27,19 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewCalc"
-        app:layout_constraintEnd_toEndOf="@+id/viewCalc"
-        app:layout_constraintStart_toStartOf="@+id/viewCalc"
+        app:layout_constraintEnd_toEndOf="@+id/imageCalc"
+        app:layout_constraintStart_toStartOf="@+id/imageCalc"
         app:layout_constraintTop_toBottomOf="@+id/imageCalc" />
 
-    <View
-        android:id="@+id/viewTheory"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/viewCalc"
-        app:layout_constraintTop_toTopOf="@id/viewCalc" />
 
     <ImageView
         android:id="@+id/imageTheory"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@id/textTheory"
-        app:layout_constraintEnd_toEndOf="@id/viewTheory"
-        app:layout_constraintStart_toStartOf="@id/viewTheory"
-        app:layout_constraintTop_toTopOf="@id/viewTheory"
+        app:layout_constraintBottom_toTopOf="@id/imageStandards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageSchema"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/theory" />
 
     <TextView
@@ -68,20 +50,10 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewTheory"
-        app:layout_constraintEnd_toEndOf="@+id/viewTheory"
-        app:layout_constraintStart_toStartOf="@+id/viewTheory"
+        app:layout_constraintEnd_toEndOf="@+id/imageTheory"
+        app:layout_constraintStart_toStartOf="@+id/imageTheory"
         app:layout_constraintTop_toBottomOf="@+id/imageTheory" />
 
-
-    <View
-        android:id="@+id/viewSchema"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintBottom_toTopOf="@id/viewTable"
-        app:layout_constraintStart_toStartOf="@id/viewCalc"
-        app:layout_constraintTop_toBottomOf="@id/viewCalc" />
 
     <ImageView
         android:id="@+id/imageSchema"
@@ -89,10 +61,10 @@
         android:layout_height="100dp"
         android:clickable="true"
         android:src="@drawable/schema"
-        app:layout_constraintBottom_toTopOf="@id/textSchema"
-        app:layout_constraintEnd_toEndOf="@id/viewSchema"
-        app:layout_constraintStart_toStartOf="@id/viewSchema"
-        app:layout_constraintTop_toTopOf="@id/viewSchema" />
+        app:layout_constraintBottom_toTopOf="@id/imageTable"
+        app:layout_constraintEnd_toStartOf="@id/imageStandards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageCalc" />
 
     <TextView
         android:id="@+id/textSchema"
@@ -102,21 +74,10 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewSchema"
-        app:layout_constraintEnd_toEndOf="@+id/viewSchema"
-        app:layout_constraintStart_toStartOf="@+id/viewSchema"
+        app:layout_constraintEnd_toEndOf="@+id/imageSchema"
+        app:layout_constraintStart_toStartOf="@+id/imageSchema"
         app:layout_constraintTop_toBottomOf="@+id/imageSchema" />
 
-    <View
-        android:id="@+id/viewTable"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintBottom_toTopOf="@id/viewExit"
-        app:layout_constraintStart_toStartOf="@id/viewCalc"
-        app:layout_constraintTop_toBottomOf="@id/viewSchema"
-
-        />
 
     <ImageView
         android:id="@+id/imageTable"
@@ -124,10 +85,10 @@
         android:layout_height="100dp"
         android:clickable="true"
         android:src="@drawable/table"
-        app:layout_constraintBottom_toTopOf="@id/textTable"
-        app:layout_constraintEnd_toEndOf="@id/viewTable"
-        app:layout_constraintStart_toStartOf="@id/viewTable"
-        app:layout_constraintTop_toTopOf="@id/viewTable" />
+        app:layout_constraintBottom_toTopOf="@id/imageExit"
+        app:layout_constraintEnd_toStartOf="@id/imageBooks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageSchema" />
 
     <TextView
         android:id="@+id/textTable"
@@ -137,20 +98,10 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewTable"
-        app:layout_constraintEnd_toEndOf="@+id/viewTable"
-        app:layout_constraintStart_toStartOf="@+id/viewTable"
+        app:layout_constraintEnd_toEndOf="@+id/imageTable"
+        app:layout_constraintStart_toStartOf="@+id/imageTable"
         app:layout_constraintTop_toBottomOf="@+id/imageTable" />
 
-    <View
-        android:id="@+id/viewStandards"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintBottom_toTopOf="@id/viewBooks"
-        app:layout_constraintEnd_toEndOf="@+id/viewTheory"
-        app:layout_constraintStart_toStartOf="@id/viewTheory"
-        app:layout_constraintTop_toBottomOf="@id/viewTheory" />
 
     <ImageView
         android:id="@+id/imageStandards"
@@ -158,10 +109,10 @@
         android:layout_height="100dp"
         android:clickable="true"
         android:src="@drawable/standards"
-        app:layout_constraintBottom_toTopOf="@id/textStandards"
-        app:layout_constraintEnd_toEndOf="@id/viewStandards"
-        app:layout_constraintStart_toStartOf="@id/viewStandards"
-        app:layout_constraintTop_toTopOf="@id/viewStandards" />
+        app:layout_constraintBottom_toTopOf="@id/imageBooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageSchema"
+        app:layout_constraintTop_toBottomOf="@id/imageTheory" />
 
     <TextView
         android:id="@+id/textStandards"
@@ -171,20 +122,10 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewStandards"
-        app:layout_constraintEnd_toEndOf="@+id/viewStandards"
-        app:layout_constraintStart_toStartOf="@+id/viewStandards"
+        app:layout_constraintEnd_toEndOf="@+id/imageStandards"
+        app:layout_constraintStart_toStartOf="@id/imageStandards"
         app:layout_constraintTop_toBottomOf="@+id/imageStandards" />
 
-    <View
-        android:id="@+id/viewBooks"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintBottom_toTopOf="@id/viewExit"
-        app:layout_constraintEnd_toEndOf="@id/viewTheory"
-        app:layout_constraintStart_toStartOf="@id/viewTheory"
-        app:layout_constraintTop_toBottomOf="@id/viewStandards" />
 
     <ImageView
         android:id="@+id/imageBooks"
@@ -192,10 +133,10 @@
         android:layout_height="100dp"
         android:clickable="true"
         android:src="@drawable/book"
-        app:layout_constraintBottom_toTopOf="@id/textBooks"
-        app:layout_constraintEnd_toEndOf="@id/viewBooks"
-        app:layout_constraintStart_toStartOf="@id/viewBooks"
-        app:layout_constraintTop_toTopOf="@id/viewBooks" />
+        app:layout_constraintBottom_toTopOf="@id/imageExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageTable"
+        app:layout_constraintTop_toBottomOf="@id/imageStandards" />
 
     <TextView
         android:id="@+id/textBooks"
@@ -205,20 +146,10 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewBooks"
-        app:layout_constraintEnd_toEndOf="@+id/viewBooks"
-        app:layout_constraintStart_toStartOf="@+id/viewBooks"
+        app:layout_constraintEnd_toEndOf="@+id/imageBooks"
+        app:layout_constraintStart_toStartOf="@+id/imageBooks"
         app:layout_constraintTop_toBottomOf="@+id/imageBooks" />
 
-    <View
-        android:id="@+id/viewExit"
-        android:layout_width="0dp"
-        android:layout_height="140dp"
-        android:background="@color/backgroundView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/viewTheory"
-        app:layout_constraintStart_toStartOf="@id/viewCalc"
-        app:layout_constraintTop_toBottomOf="@id/viewTable" />
 
     <ImageView
         android:id="@+id/imageExit"
@@ -226,23 +157,20 @@
         android:layout_height="100dp"
         android:clickable="true"
         android:src="@drawable/exit"
-        app:layout_constraintBottom_toTopOf="@id/textExit"
-        app:layout_constraintEnd_toEndOf="@id/viewExit"
-        app:layout_constraintStart_toStartOf="@id/viewExit"
-        app:layout_constraintTop_toTopOf="@id/viewExit" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageTable" />
 
-    <TextView
-        android:id="@+id/textExit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/output"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/viewExit"
-        app:layout_constraintEnd_toEndOf="@+id/viewExit"
-        app:layout_constraintStart_toStartOf="@+id/viewExit"
-        app:layout_constraintTop_toBottomOf="@+id/imageExit" />
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

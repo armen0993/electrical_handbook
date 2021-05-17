@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".theory.category_0.BasicConcepts">
+
+    <LinearLayout
+        android:id="@+id/position_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginHorizontal="8dp">
+
+        <ImageView
+            android:id="@+id/img_icon_0"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/voltage"
+            android:src="@drawable/ic_u" />
+        <TextView
+            android:id="@+id/title_basic_concepts_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:text="@string/voltage"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/position_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginHorizontal="8dp">
+        <ImageView
+            android:id="@+id/img_icon_1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/voltage"
+            android:src="@drawable/ic_i" />
+        <TextView
+            android:id="@+id/title_basic_concepts_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:text="@string/current"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/position_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginHorizontal="8dp">
+
+        <ImageView
+            android:id="@+id/img_icon_2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/voltage"
+            android:src="@drawable/ic_r" />
+
+        <TextView
+            android:id="@+id/title_basic_concepts_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:text="@string/resist"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/position_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginHorizontal="8dp">
+
+        <ImageView
+            android:id="@+id/img_icon_3"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:contentDescription="@string/voltage"
+            android:src="@drawable/ic_p" />
+
+        <TextView
+            android:id="@+id/title_basic_concepts_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16sp"
+            android:text="@string/power_energy"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

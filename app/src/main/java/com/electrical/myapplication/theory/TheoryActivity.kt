@@ -17,8 +17,10 @@ class TheoryActivity : AppCompatActivity() {
 
         title = resources.getString(R.string.theory)
         val actionBar: androidx.appcompat.app.ActionBar? = supportActionBar
-        actionBar?.setHomeButtonEnabled(true)
-        actionBar?.setDisplayHomeAsUpEnabled(true)
+             actionBar?.apply {
+            setHomeButtonEnabled(true)
+            setDisplayHomeAsUpEnabled(true)
+        }
 
         val recyclerTheory: RecyclerView = bindingTheory.recyclerTheory
         val listTheory: List<TheoryData> = listOf(
@@ -86,7 +88,6 @@ class TheoryActivity : AppCompatActivity() {
             )
         )
 
-
         val adapterTheory = TheoryAdapter(this, listTheory)
         recyclerTheory.adapter = adapterTheory
         recyclerTheory.layoutManager = LinearLayoutManager(this)
@@ -99,7 +100,6 @@ class TheoryActivity : AppCompatActivity() {
                 return true
             }
         }
-
         return super.onOptionsItemSelected(item)
     }
 }

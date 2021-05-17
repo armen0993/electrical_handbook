@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
-        <activity android:name=".theory.TheoryActivity"></activity>
+        <activity android:name=".theory.category_0.VoltageShow"></activity>
+        <activity android:name=".theory.category_0.BasicConcepts" />
+        <activity android:name=".theory.TheoryActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
