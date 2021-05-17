@@ -16,8 +16,8 @@ class TheoryActivity : AppCompatActivity() {
         setContentView(bindingTheory.root)
 
         title = resources.getString(R.string.theory)
-        val actionBar: androidx.appcompat.app.ActionBar? = supportActionBar
-             actionBar?.apply {
+        val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
+        actionBarShow?.apply {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
         }
@@ -94,8 +94,8 @@ class TheoryActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home ->{
+        when (item.itemId) {
+            android.R.id.home -> {
                 finish()
                 return true
             }

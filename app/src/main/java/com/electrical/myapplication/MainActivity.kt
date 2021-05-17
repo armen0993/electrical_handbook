@@ -25,18 +25,17 @@ class MainActivity : AppCompatActivity() {
         binding.imageExit.setOnClickListener {
             supportFragmentManager
                 .beginTransaction()
-                .add(R.id.container,ExitFragment())
+                .addToBackStack("exit")
+                .add(R.id.container, ExitFragment())
                 .commit()
-
         }
 
         binding.imageCalc.setOnClickListener {
-            val toast = Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
+           Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
         }
         binding.imageTheory.setOnClickListener() {
             val intentTheory = Intent(this, TheoryActivity::class.java)
             startActivity(intentTheory)
-
         }
     }
 

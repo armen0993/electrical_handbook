@@ -3,14 +3,14 @@
     package="com.electrical.myapplication">
 
     <application
-        android:allowBackup="true"
+
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
-        <activity android:name=".theory.category_0.VoltageShow"></activity>
-        <activity android:name=".theory.category_0.BasicConcepts" />
+        <activity android:name=".theory.basic_concepts.ShowCategoryActivity" />
+        <activity android:name=".theory.basic_concepts.BasicConcepts" />
         <activity android:name=".theory.TheoryActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

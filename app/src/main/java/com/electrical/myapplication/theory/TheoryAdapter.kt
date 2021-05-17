@@ -8,15 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 
 import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
-import com.electrical.myapplication.theory.category_0.BasicConcepts
+import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
 
 @SuppressLint("StaticFieldLeak")
-lateinit var view:View
+lateinit var view: View
 const val ACTION_BAR_TITLE = "action_title"
 
 class TheoryAdapter(private val context: Context, private val dataTheory: List<TheoryData>) :
@@ -24,7 +22,7 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TheoryViewHolder {
-         view = LayoutInflater.from(context).inflate(R.layout.recycler_theory, parent, false)
+        view = LayoutInflater.from(context).inflate(R.layout.recycler_theory, parent, false)
         return TheoryViewHolder(view)
     }
 
@@ -33,9 +31,9 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
         holder.title.text = valueData.title
         holder.description.text = valueData.description
         holder.imageIcon.setImageResource(valueData.imageIcon)
-       view.setOnClickListener(){
-               showTheoryCategory(position)
-       }
+        view.setOnClickListener() {
+            showTheoryCategory(position)
+        }
 
     }
 
@@ -55,11 +53,11 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
         }
     }
 
-    fun showTheoryCategory(position: Int){
-        when(position){
-            0-> {
-                val basicConceptsIntent = Intent(context,BasicConcepts::class.java)
-                basicConceptsIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+    private fun showTheoryCategory(position: Int) {
+        when (position) {
+            0 -> {
+                val basicConceptsIntent = Intent(context, BasicConcepts::class.java)
+                basicConceptsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(basicConceptsIntent)
             }
         }
