@@ -11,20 +11,15 @@ class ShowCategoryActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_category_concepts)
 
-        title = intent.getStringExtra(ACTION_BAR_TITLE)
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
         actionBarShow?.apply {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
         }
 
-        when (intent.getIntExtra(CATEGORY_NAME, 0)) {
+        when (intent.getIntExtra(CATEGORY_NAME_CONCEPTS, 0)) {
             101 -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
-                actionBarShow?.apply {
-                    setHomeButtonEnabled(true)
-                    setDisplayHomeAsUpEnabled(true)
-                }
                 supportFragmentManager
                     .beginTransaction()
                     .add(R.id.container_show_category, ShowVoltageFragment())
@@ -32,10 +27,6 @@ class ShowCategoryActivity : AppCompatActivity() {
             }
             102 -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
-                actionBarShow?.apply {
-                    setHomeButtonEnabled(true)
-                    setDisplayHomeAsUpEnabled(true)
-                }
                 supportFragmentManager
                     .beginTransaction()
                     .add(R.id.container_show_category, ShowCurrentFragment())
@@ -43,10 +34,6 @@ class ShowCategoryActivity : AppCompatActivity() {
             }
             103 -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
-                actionBarShow?.apply {
-                    setHomeButtonEnabled(true)
-                    setDisplayHomeAsUpEnabled(true)
-                }
                 supportFragmentManager
                     .beginTransaction()
                     .add(R.id.container_show_category, ShowResistanceFragment())
@@ -54,10 +41,6 @@ class ShowCategoryActivity : AppCompatActivity() {
             }
             104 -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
-                actionBarShow?.apply {
-                    setHomeButtonEnabled(true)
-                    setDisplayHomeAsUpEnabled(true)
-                }
                 supportFragmentManager
                     .beginTransaction()
                     .add(R.id.container_show_category, ShowPowerFragment())
@@ -75,4 +58,6 @@ class ShowCategoryActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
 }

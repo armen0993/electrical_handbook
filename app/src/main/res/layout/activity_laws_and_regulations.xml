@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".theory.laws_and_regulations.LawsAndRegulations">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical"
+        tools:context=".theory.basic_concepts.BasicConcepts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/laws_position_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/laws_img_icon_0"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_ohm"
+                android:src="@drawable/ic_laws_ohm" />
+            <TextView
+                android:id="@+id/laws_title_basic_concepts_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/laws_title_ohm"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/laws_position_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginHorizontal="8dp">
+            <ImageView
+                android:id="@+id/laws_img_icon_1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_kirchhoff"
+                android:src="@drawable/ic_laws_kirchhoff" />
+            <TextView
+                android:id="@+id/laws_title_basic_concepts_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/laws_title_kirchhoff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laws_position_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/laws_img_icon_2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_joule"
+                android:src="@drawable/ic_laws_joule" />
+
+            <TextView
+                android:id="@+id/laws_title_basic_concepts_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/laws_title_joule"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laws_position_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/laws_img_icon_3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_coulomb"
+                android:src="@drawable/ic_laws_coulomb" />
+
+            <TextView
+                android:id="@+id/laws_title_basic_concepts_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/laws_title_coulomb"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/laws_position_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/laws_img_icon_4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_laws_right"
+                android:src="@drawable/ic_laws_right" />
+
+            <TextView
+                android:id="@+id/laws_title_basic_concepts_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/laws_title_right"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/laws_position_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginHorizontal="8dp">
+
+            <ImageView
+                android:id="@+id/laws_img_icon_5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_laws_left"
+                android:src="@drawable/ic_laws_left" />
+
+            <TextView
+                android:id="@+id/laws_title_basic_concepts_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/laws_title_left"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
