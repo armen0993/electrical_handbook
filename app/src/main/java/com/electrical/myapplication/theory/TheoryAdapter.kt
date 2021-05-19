@@ -46,15 +46,10 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
     }
 
     class TheoryViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val title: TextView
-        val description: TextView
-        val imageIcon: ImageView
+        val title: TextView = view.findViewById(R.id.title_theory)
+        val description: TextView = view.findViewById(R.id.description_theory)
+        val imageIcon: ImageView = view.findViewById(R.id.img_icon_theory)
 
-        init {
-            title = view.findViewById(R.id.title_theory)
-            description = view.findViewById(R.id.description_theory)
-            imageIcon = view.findViewById(R.id.img_icon_theory)
-        }
     }
 
     private fun showTheoryCategory(position: Int) {

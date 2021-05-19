@@ -18,7 +18,7 @@
       android:id="@+id/laws_linear_layout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-           android:orientation="vertical"
+      android:orientation="vertical"
       tools:ignore="UseCompoundDrawables">
       <ImageView
           android:id="@+id/ic_laws_1"

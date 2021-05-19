@@ -30,19 +30,39 @@ class ShowCategoryLawsActivity : AppCompatActivity() {
 
             }
             CATEGORY_LAWS_KIRCHHOFF->{
-
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowKirchhoffFragment())
+                    .commit()
             }
             CATEGORY_LAWS_JOULE->{
-
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowJouleFragment())
+                    .commit()
             }
             CATEGORY_LAWS_COULOMB->{
-
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowCoulombFragment())
+                    .commit()
             }
             CATEGORY_LAWS_RIGHT->{
-
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowLawsRightFragment())
+                    .commit()
             }
             CATEGORY_LAWS_LEFT->{
-
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowLawsLeftFragment())
+                    .commit()
             }
         }
     }

@@ -30,12 +30,10 @@ class LawsAndRegulations : AppCompatActivity() {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
         }
-
        bindingLaws.lawsPosition0.setOnClickListener(){
          lawsShowIntent.putExtra(ACTION_BAR_TITLE,bindingLaws.lawsTitleBasicConcepts0.text)
            lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_OHM)
            startActivity(lawsShowIntent)
-
        }
        bindingLaws.lawsPosition1.setOnClickListener(){
            lawsShowIntent.putExtra(ACTION_BAR_TITLE,bindingLaws.lawsTitleBasicConcepts1.text)
@@ -62,11 +60,6 @@ class LawsAndRegulations : AppCompatActivity() {
            lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_LEFT)
            startActivity(lawsShowIntent)
        }
-
-
-
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
