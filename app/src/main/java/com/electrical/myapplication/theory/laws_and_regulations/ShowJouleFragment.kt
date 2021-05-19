@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 
-class ShowJouleFragment:Fragment() {
+class ShowJouleFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-       return inflater.inflate(R.layout.fragment_show_laws_joule,container,false)
+        return inflater.inflate(R.layout.fragment_show_laws_joule, container, false)
     }
 }

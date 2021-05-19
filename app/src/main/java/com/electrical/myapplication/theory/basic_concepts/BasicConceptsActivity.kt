@@ -16,7 +16,7 @@ const val POWER_CATEGORY = 104
 class BasicConcepts : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val bindingBasicConcepts =ActivityBasicConceptsBinding.inflate(layoutInflater)
+        val bindingBasicConcepts = ActivityBasicConceptsBinding.inflate(layoutInflater)
         setContentView(bindingBasicConcepts.root)
 
         val intentShowCategoryConcepts = Intent(this, ShowCategoryActivity::class.java)
@@ -59,10 +59,7 @@ class BasicConcepts : AppCompatActivity() {
             )
             intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, POWER_CATEGORY)
             startActivity(intentShowCategoryConcepts)
-
         }
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

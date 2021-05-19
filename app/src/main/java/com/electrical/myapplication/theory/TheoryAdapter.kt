@@ -3,17 +3,17 @@ package com.electrical.myapplication.theory
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.util.Log
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-
 import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
 import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulations
+import com.electrical.myapplication.theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity
 
 @SuppressLint("StaticFieldLeak")
 lateinit var view: View
@@ -34,7 +34,7 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
         holder.description.text = valueData.description
         holder.imageIcon.setImageResource(valueData.imageIcon)
 
-         view.setOnClickListener() {
+        view.setOnClickListener() {
             showTheoryCategory(holder.position)
 
         }
@@ -59,12 +59,17 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 basicConceptsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(basicConceptsIntent)
             }
-            1->{
-                val lawsAndRegulationsIntent = Intent(context,LawsAndRegulations::class.java)
-                lawsAndRegulationsIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+            1 -> {
+                val lawsAndRegulationsIntent = Intent(context, LawsAndRegulations::class.java)
+                lawsAndRegulationsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(lawsAndRegulationsIntent)
             }
-
+            2 -> {
+                val serialAndParallelConnectionIntent =
+                    Intent(context, SerialAndParallelConnectionActivity::class.java)
+                serialAndParallelConnectionIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+                context.startActivity(serialAndParallelConnectionIntent)
+            }
         }
 
     }

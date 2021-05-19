@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 
-class ShowVoltageFragment: Fragment() {
+class ShowVoltageFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,6 +15,6 @@ class ShowVoltageFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_show_voltage,container,false)
+        return inflater.inflate(R.layout.fragment_show_voltage, container, false)
     }
 }

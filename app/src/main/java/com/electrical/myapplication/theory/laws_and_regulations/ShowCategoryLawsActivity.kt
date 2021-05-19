@@ -19,53 +19,54 @@ class ShowCategoryLawsActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
 
-        when(intent.getIntExtra(CATEGORY_NAME_LAWS,0)){
+        when (intent.getIntExtra(CATEGORY_NAME_LAWS, 0)) {
 
-            CATEGORY_LAWS_OHM->{
+            CATEGORY_LAWS_OHM -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.laws_show_container,ShowOhmFragment())
+                    .add(R.id.laws_show_container, ShowOhmFragment())
                     .commit()
 
             }
-            CATEGORY_LAWS_KIRCHHOFF->{
+            CATEGORY_LAWS_KIRCHHOFF -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.laws_show_container,ShowKirchhoffFragment())
+                    .add(R.id.laws_show_container, ShowKirchhoffFragment())
                     .commit()
             }
-            CATEGORY_LAWS_JOULE->{
+            CATEGORY_LAWS_JOULE -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.laws_show_container,ShowJouleFragment())
+                    .add(R.id.laws_show_container, ShowJouleFragment())
                     .commit()
             }
-            CATEGORY_LAWS_COULOMB->{
+            CATEGORY_LAWS_COULOMB -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.laws_show_container,ShowCoulombFragment())
+                    .add(R.id.laws_show_container, ShowCoulombFragment())
                     .commit()
             }
-            CATEGORY_LAWS_RIGHT->{
+            CATEGORY_LAWS_RIGHT -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.laws_show_container,ShowLawsRightFragment())
+                    .add(R.id.laws_show_container, ShowLawsRightFragment())
                     .commit()
             }
-            CATEGORY_LAWS_LEFT->{
+            CATEGORY_LAWS_LEFT -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.laws_show_container,ShowLawsLeftFragment())
+                    .add(R.id.laws_show_container, ShowLawsLeftFragment())
                     .commit()
             }
         }
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {

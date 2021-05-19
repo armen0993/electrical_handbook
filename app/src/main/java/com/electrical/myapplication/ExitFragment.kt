@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.Toast
 import kotlin.system.exitProcess
 
 
@@ -17,9 +16,7 @@ class ExitFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.exit_fragment, container, false)
-
-        return view
+        return inflater.inflate(R.layout.exit_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,9 +30,5 @@ class ExitFragment : Fragment() {
         btnNo.setOnClickListener {
             this.activity?.onBackPressed()
         }
-
-
     }
-
-
 }

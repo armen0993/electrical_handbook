@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.imageCalc.setOnClickListener {
-           Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
         }
         binding.imageTheory.setOnClickListener() {
             val intentTheory = Intent(this, TheoryActivity::class.java)

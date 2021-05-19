@@ -8,12 +8,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 
-class ShowOhmFragment:Fragment() {
+class ShowOhmFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_show_laws_ohm,container,false)
+        return inflater.inflate(R.layout.fragment_show_laws_ohm, container, false)
     }
 }

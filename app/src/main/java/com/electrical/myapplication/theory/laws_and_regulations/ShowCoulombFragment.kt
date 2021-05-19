@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 
-class ShowCoulombFragment:Fragment() {
+class ShowCoulombFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_show_laws_coulomb,container,false)
+        return inflater.inflate(R.layout.fragment_show_laws_coulomb, container, false)
     }
 }
