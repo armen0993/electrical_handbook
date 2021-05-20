@@ -13,7 +13,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.electrical.myapplication.databinding.ActivityMainBinding
-import com.electrical.myapplication.schema.SchemaActivity
+
 import com.electrical.myapplication.theory.TheoryActivity
 
 class MainActivity : AppCompatActivity() {
@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
         }
         binding.imageSchema.setOnClickListener {
-            val intentSchema = Intent(this, SchemaActivity::class.java)
-            startActivity(intentSchema)
+         //   val intentSchema = Intent(this, SchemaActivity::class.java)
+           // startActivity(intentSchema)
         }
         binding.imageTheory.setOnClickListener() {
             val intentTheory = Intent(this, TheoryActivity::class.java)

@@ -18,8 +18,8 @@ const val CATEGORY_LAWS_LEFT = 205
 
 class LawsAndRegulations : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
+
         val bindingLaws = ActivityLawsAndRegulationsBinding.inflate(layoutInflater)
         setContentView(bindingLaws.root)
 
@@ -30,8 +30,9 @@ class LawsAndRegulations : AppCompatActivity() {
         actionBarShow?.apply {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
+
         }
-        bindingLaws.lawsPosition0.setOnClickListener() {
+        bindingLaws.lawsPosition0.setOnClickListener {
             lawsShowIntent.putExtra(ACTION_BAR_TITLE, bindingLaws.lawsTitleBasicConcepts0.text)
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_OHM)
             startActivity(lawsShowIntent)

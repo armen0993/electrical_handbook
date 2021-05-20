@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
 import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulations
+import com.electrical.myapplication.theory.power_plants_and_substations.Substations
+
 import com.electrical.myapplication.theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity
 
 @SuppressLint("StaticFieldLeak")
@@ -69,6 +71,11 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                     Intent(context, SerialAndParallelConnectionActivity::class.java)
                 serialAndParallelConnectionIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
                 context.startActivity(serialAndParallelConnectionIntent)
+            }
+            5->{
+                 val substationsIntent = Intent(context, Substations::class.java)
+                substationsIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+                context.startActivity(substationsIntent)
             }
         }
 

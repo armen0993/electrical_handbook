@@ -1,176 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".theory.laws_and_regulations.LawsAndRegulations">
+    tools:context=".theory.power_plants_and_substations.Substations">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/backgroundColor"
         android:orientation="vertical"
-        tools:context=".theory.basic_concepts.BasicConcepts"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        tools:context=".theory.basic_concepts.BasicConcepts">
 
         <LinearLayout
-            android:id="@+id/laws_position_0"
+            android:id="@+id/substations_position_0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:orientation="horizontal"
             android:clickable="true"
-            android:layout_marginHorizontal="8dp">
+            android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/laws_img_icon_0"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:contentDescription="@string/ic_ohm"
-                android:src="@drawable/ic_laws_ohm" />
+                android:src="@drawable/ic_info_substations_plant" />
+
             <TextView
-                android:id="@+id/laws_title_basic_concepts_0"
+                android:id="@+id/title_substations_plant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
-                android:text="@string/laws_title_ohm"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/laws_position_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            android:clickable="true"
-            android:layout_marginHorizontal="8dp">
-            <ImageView
-                android:id="@+id/laws_img_icon_1"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_kirchhoff"
-                android:src="@drawable/ic_laws_kirchhoff" />
-            <TextView
-                android:id="@+id/laws_title_basic_concepts_1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/laws_title_kirchhoff"
+                android:text="@string/title_electrical_substations"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/laws_position_2"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16sp"
+            android:gravity="center_horizontal"
+            android:text="@string/title_substations_category"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/substations_position_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:orientation="horizontal"
             android:clickable="true"
-            android:layout_marginHorizontal="8dp">
+            android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/laws_img_icon_2"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:contentDescription="@string/ic_joule"
-                android:src="@drawable/ic_laws_joule" />
+                android:contentDescription="@string/ic_nuclear_energy"
+                android:src="@drawable/ic_info_substations_nuclear_plant" />
 
             <TextView
-                android:id="@+id/laws_title_basic_concepts_2"
+                android:id="@+id/title_substations_nuclear_plant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
-                android:text="@string/laws_title_joule"
+                android:text="@string/title_substations_category_nuclear"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/laws_position_3"
+            android:id="@+id/substations_position_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:orientation="horizontal"
             android:clickable="true"
-            android:layout_marginHorizontal="8dp">
+            android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/laws_img_icon_3"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:contentDescription="@string/ic_coulomb"
-                android:src="@drawable/ic_laws_coulomb" />
+                android:contentDescription="@string/ic_thermal_power"
+                android:src="@drawable/ic_info_substations_thermal_power_plant" />
 
             <TextView
-                android:id="@+id/laws_title_basic_concepts_3"
+                android:id="@+id/title_substations_thermal_power_plant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
-                android:text="@string/laws_title_coulomb"
+                android:text="@string/title_substations_category_thermal"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
-            android:id="@+id/laws_position_4"
+            android:id="@+id/substations_position_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:orientation="horizontal"
             android:clickable="true"
-            android:layout_marginHorizontal="8dp">
+            android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/laws_img_icon_4"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:contentDescription="@string/ic_laws_right"
-                android:src="@drawable/ic_laws_right" />
+                android:contentDescription="@string/ic_solar_energy"
+                android:src="@drawable/ic_info_substations_solar_plant" />
 
             <TextView
-                android:id="@+id/laws_title_basic_concepts_4"
+                android:id="@+id/title_substations_solar_plant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
-                android:text="@string/laws_title_right"
+                android:text="@string/title_substations_category_solar"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
-            android:id="@+id/laws_position_5"
+            android:id="@+id/substations_position_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/white"
-            android:orientation="horizontal"
             android:clickable="true"
-            android:layout_marginHorizontal="8dp">
+            android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/laws_img_icon_5"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:contentDescription="@string/ic_laws_left"
-                android:src="@drawable/ic_laws_left" />
+                android:contentDescription="@string/ic_hydroelectric_plant"
+                android:src="@drawable/ic_info_substations_hydroelectric_plant" />
 
             <TextView
-                android:id="@+id/laws_title_basic_concepts_5"
+                android:id="@+id/title_substations_hydroelectric_plant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16sp"
-                android:text="@string/laws_title_left"
+                android:text="@string/title_substations_category_hydroelectric"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/substations_position_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_wind_energy"
+                android:src="@drawable/ic_info_substations_wind_plant" />
+
+            <TextView
+                android:id="@+id/title_substations_wind_plant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/title_substations_category_wind_energy"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/substations_position_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:contentDescription="@string/ic_geothermal_energy"
+                android:src="@drawable/ic_info_substations_geothermal_plant" />
+
+            <TextView
+                android:id="@+id/title_substations_geothermal_plant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16sp"
+                android:text="@string/title_substations_category_geothermal_energy"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

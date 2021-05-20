@@ -268,6 +268,20 @@
     <string name="info_connection_resistors">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>Соединение ресисторов</b></string>
     <string name="info_connection_capacitor">\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>Соединение конденсаторов</b></string>
     <string name="ic_connection">ic_connection</string>
+    <string name="title_electrical_substations">Электроподстанция</string>
+    <string name="title_substations_category">Виды электростанций</string>
+    <string name="title_substations_category_nuclear">Атомная электростанция</string>
+    <string name="title_substations_category_thermal">Тепловая электростанция</string>
+    <string name="title_substations_category_solar">Солнечная электростанция</string>
+    <string name="title_substations_category_hydroelectric">Гидроэлектростанция</string>
+    <string name="ic_hydroelectric_plant">ic_hydroelectric_plant</string>
+    <string name="title_substations_category_wind_energy">Ветроэлектростанция</string>
+    <string name="title_substations_category_geothermal_energy">Гоетермальная электростанция</string>
+    <string name="ic_nuclear_energy">ic_nuclear_energy</string>
+    <string name="ic_thermal_power">ic_thermal_power</string>
+    <string name="ic_solar_energy">ic_solar_energy</string>
+    <string name="ic_wind_energy">ic_wind_energy</string>
+    <string name="ic_geothermal_energy">ic_geothermal_energy</string>
 
 
 </resources>
