@@ -4,11 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import com.electrical.myapplication.databinding.ActivityBasicConceptsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
-const val CATEGORY_NAME = "Basic Concepts"
+const val CATEGORY_NAME_CONCEPTS = "Basic Concepts"
 const val VOLTAGE_CATEGORY = 101
 const val CURRENT_CATEGORY = 102
 const val RESISTANCE_CATEGORY = 103
@@ -17,7 +16,7 @@ const val POWER_CATEGORY = 104
 class BasicConcepts : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val bindingBasicConcepts = ActivityBasicConceptsBinding.inflate(layoutInflater)
+        val bindingBasicConcepts =ActivityBasicConceptsBinding.inflate(layoutInflater)
         setContentView(bindingBasicConcepts.root)
 
         val intentShowCategoryConcepts = Intent(this, ShowCategoryActivity::class.java)
@@ -34,7 +33,7 @@ class BasicConcepts : AppCompatActivity() {
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts0.text
             )
-            intentShowCategoryConcepts.putExtra(CATEGORY_NAME, VOLTAGE_CATEGORY)
+            intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, VOLTAGE_CATEGORY)
             startActivity(intentShowCategoryConcepts)
         }
         bindingBasicConcepts.position1.setOnClickListener() {
@@ -42,7 +41,7 @@ class BasicConcepts : AppCompatActivity() {
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts1.text
             )
-            intentShowCategoryConcepts.putExtra(CATEGORY_NAME, CURRENT_CATEGORY)
+            intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, CURRENT_CATEGORY)
             startActivity(intentShowCategoryConcepts)
         }
         bindingBasicConcepts.position2.setOnClickListener() {
@@ -50,7 +49,7 @@ class BasicConcepts : AppCompatActivity() {
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts2.text
             )
-            intentShowCategoryConcepts.putExtra(CATEGORY_NAME, RESISTANCE_CATEGORY)
+            intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, RESISTANCE_CATEGORY)
             startActivity(intentShowCategoryConcepts)
         }
         bindingBasicConcepts.position3.setOnClickListener() {
@@ -58,7 +57,7 @@ class BasicConcepts : AppCompatActivity() {
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts3.text
             )
-            intentShowCategoryConcepts.putExtra(CATEGORY_NAME, POWER_CATEGORY)
+            intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, POWER_CATEGORY)
             startActivity(intentShowCategoryConcepts)
 
         }

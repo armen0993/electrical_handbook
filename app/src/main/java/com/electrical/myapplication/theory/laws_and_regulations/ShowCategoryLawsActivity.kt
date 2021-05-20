@@ -1,4 +1,4 @@
-package com.electrical.myapplication.theory.basic_concepts
+package com.electrical.myapplication.theory.laws_and_regulations
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,10 +6,12 @@ import android.view.MenuItem
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
-class ShowCategoryActivity : AppCompatActivity() {
+
+class ShowCategoryLawsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_show_category_concepts)
+        setContentView(R.layout.activity_show_category_laws)
+
 
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
         actionBarShow?.apply {
@@ -17,38 +19,53 @@ class ShowCategoryActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
 
-        when (intent.getIntExtra(CATEGORY_NAME_CONCEPTS, 0)) {
-            101 -> {
+        when(intent.getIntExtra(CATEGORY_NAME_LAWS,0)){
+
+            CATEGORY_LAWS_OHM->{
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.container_show_category, ShowVoltageFragment())
+                    .add(R.id.laws_show_container,ShowOhmFragment())
+                    .commit()
+
+            }
+            CATEGORY_LAWS_KIRCHHOFF->{
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowKirchhoffFragment())
                     .commit()
             }
-            102 -> {
+            CATEGORY_LAWS_JOULE->{
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.container_show_category, ShowCurrentFragment())
+                    .add(R.id.laws_show_container,ShowJouleFragment())
                     .commit()
             }
-            103 -> {
+            CATEGORY_LAWS_COULOMB->{
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.container_show_category, ShowResistanceFragment())
+                    .add(R.id.laws_show_container,ShowCoulombFragment())
                     .commit()
             }
-            104 -> {
+            CATEGORY_LAWS_RIGHT->{
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
                 supportFragmentManager
                     .beginTransaction()
-                    .add(R.id.container_show_category, ShowPowerFragment())
+                    .add(R.id.laws_show_container,ShowLawsRightFragment())
+                    .commit()
+            }
+            CATEGORY_LAWS_LEFT->{
+                title = intent.getStringExtra(ACTION_BAR_TITLE)
+                supportFragmentManager
+                    .beginTransaction()
+                    .add(R.id.laws_show_container,ShowLawsLeftFragment())
                     .commit()
             }
         }
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
@@ -58,6 +75,4 @@ class ShowCategoryActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
-
 }
