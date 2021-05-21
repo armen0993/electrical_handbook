@@ -22,6 +22,7 @@ class BasicConcepts : AppCompatActivity() {
         val intentShowCategoryConcepts = Intent(this, ShowCategoryActivity::class.java)
 
         title = intent.getStringExtra(ACTION_BAR_TITLE)
+
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
         actionBarShow?.apply {
             setHomeButtonEnabled(true)

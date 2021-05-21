@@ -15,11 +15,11 @@
         <activity android:name=".theory.laws_and_regulations.LawsAndRegulations" />
         <activity android:name=".theory.basic_concepts.ShowCategoryActivity" />
         <activity android:name=".theory.basic_concepts.BasicConcepts" />
-        <activity android:name=".theory.TheoryActivity" />
+        <activity android:name=".theory.TheoryActivity"            />
+        <activity android:name=".schema.SchemaActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>

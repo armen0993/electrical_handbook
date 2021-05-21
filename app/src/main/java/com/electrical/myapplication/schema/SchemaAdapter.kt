@@ -11,6 +11,7 @@ import com.electrical.myapplication.R
 
 class SchemaAdapter(private val context: Context, private val dataSchema:List<SchemaData>):
     RecyclerView.Adapter<SchemaAdapter.SchemaViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SchemaViewHolder {
         val  view = LayoutInflater.from(context).inflate(R.layout.recycler_schema,parent,false)
         return SchemaViewHolder(view)
