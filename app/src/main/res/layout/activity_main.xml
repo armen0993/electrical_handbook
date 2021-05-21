@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_first_activity"
+    android:background="@drawable/ic_first_activity_background"
     tools:context=".MainActivity">
 
 
@@ -13,7 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/calc"
+        android:src="@drawable/ic_first_activity_calculator"
         app:layout_constraintBottom_toTopOf="@id/imageSchema"
         app:layout_constraintEnd_toStartOf="@id/imageTheory"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageSchema"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/theory" />
+        app:srcCompat="@drawable/ic_first_activity_theory" />
 
     <TextView
         android:id="@+id/textTheory"
@@ -60,7 +60,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/schema"
+        android:src="@drawable/ic_first_activity_schema"
         app:layout_constraintBottom_toTopOf="@id/imageTable"
         app:layout_constraintEnd_toStartOf="@id/imageStandards"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/table"
+        android:src="@drawable/ic_first_activity_table"
         app:layout_constraintBottom_toTopOf="@id/imageExit"
         app:layout_constraintEnd_toStartOf="@id/imageBooks"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +108,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/standards"
+        android:src="@drawable/ic_first_activity_standards"
         app:layout_constraintBottom_toTopOf="@id/imageBooks"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageSchema"
@@ -132,7 +132,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/book"
+        android:src="@drawable/ic_first_activity_book"
         app:layout_constraintBottom_toTopOf="@id/imageExit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/imageTable"
@@ -156,7 +156,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/exit"
+        android:src="@drawable/ic_first_activity_exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -25,7 +25,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:contentDescription="@string/voltage"
-            android:src="@drawable/ic_u" />
+            android:src="@drawable/ic_basic_concepts_u" />
         <TextView
             android:id="@+id/title_basic_concepts_0"
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:contentDescription="@string/voltage"
-            android:src="@drawable/ic_i" />
+            android:src="@drawable/ic_basic_concepts_i" />
         <TextView
             android:id="@+id/title_basic_concepts_1"
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:contentDescription="@string/voltage"
-            android:src="@drawable/ic_r" />
+            android:src="@drawable/ic_basic_concepts_r" />
 
         <TextView
             android:id="@+id/title_basic_concepts_2"
@@ -102,7 +102,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:contentDescription="@string/voltage"
-            android:src="@drawable/ic_p" />
+            android:src="@drawable/ic_basic_concepts_p" />
 
         <TextView
             android:id="@+id/title_basic_concepts_3"

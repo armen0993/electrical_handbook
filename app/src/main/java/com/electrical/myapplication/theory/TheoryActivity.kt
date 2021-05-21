@@ -1,6 +1,5 @@
 package com.electrical.myapplication.theory
 
-import android.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -27,64 +26,64 @@ class TheoryActivity : AppCompatActivity() {
             TheoryData(
                 resources.getString(R.string.theory_title_1),
                 resources.getString(R.string.theory_description_1),
-                R.drawable.ic_volt_currents_theory
+                R.drawable.ic_theory_volt_currents
             ), TheoryData(
                 resources.getString(R.string.theory_title_2),
                 resources.getString(R.string.theory_description_2),
-                R.drawable.ic_laws_theory
+                R.drawable.ic_theory_laws
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_3),
-                "", R.drawable.ic_resistors_theory
+                "", R.drawable.ic_theory_resistors
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_4),
                 resources.getString(R.string.theory_description_3),
-                R.drawable.ic_light_bulb_theory
+                R.drawable.ic_theory_light_bulb
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_5),
                 resources.getString(R.string.theory_description_4),
-                R.drawable.ic_cabel_theory
+                R.drawable.ic_theory_cabel
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_6), "",
-                R.drawable.ic_electrical_theory
+                R.drawable.ic_theory_electrical
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_7),
                 resources.getString(R.string.theory_description_5),
-                R.drawable.ic_ampermeter_theory
+                R.drawable.ic_theory_ampermeter
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_8),
                 resources.getString(R.string.theory_description_6),
-                R.drawable.ic_electrical_engine_theory
+                R.drawable.ic_theory_electrical_engine
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_9),
-                resources.getString(R.string.theory_description_7), R.drawable.ic_netral_theory
+                resources.getString(R.string.theory_description_7), R.drawable.ic_theory_netral
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_10), "",
-                R.drawable.ic_short_circuit_theory
+                R.drawable.ic_theory_short_circuit
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_11),
                 resources.getString(R.string.theory_description_8),
-                R.drawable.ic_circuit_breaker_theory
+                R.drawable.ic_theory_circuit_breaker
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_12), "",
-                R.drawable.ic_ip_theory
+                R.drawable.ic_theory_ip
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_13), "",
-                R.drawable.ic_instruments_theory
+                R.drawable.ic_theory_instruments
             ),
             TheoryData(
                 resources.getString(R.string.theory_title_14), "",
-                R.drawable.ic_sockets_theory
+                R.drawable.ic_theory_sockets
             )
         )
 

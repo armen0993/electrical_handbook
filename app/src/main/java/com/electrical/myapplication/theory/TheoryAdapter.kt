@@ -38,9 +38,7 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
 
         view.setOnClickListener() {
             showTheoryCategory(holder.position)
-
         }
-
     }
 
     override fun getItemCount(): Int {
@@ -78,6 +76,5 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 context.startActivity(substationsIntent)
             }
         }
-
     }
 }

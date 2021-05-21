@@ -19,7 +19,7 @@ class BasicConcepts : AppCompatActivity() {
         val bindingBasicConcepts = ActivityBasicConceptsBinding.inflate(layoutInflater)
         setContentView(bindingBasicConcepts.root)
 
-        val intentShowCategoryConcepts = Intent(this, ShowCategoryActivity::class.java)
+        val intentShowCategoryConcepts = Intent(this, ShowCategoryBasicConceptsActivity::class.java)
 
         title = intent.getStringExtra(ACTION_BAR_TITLE)
 

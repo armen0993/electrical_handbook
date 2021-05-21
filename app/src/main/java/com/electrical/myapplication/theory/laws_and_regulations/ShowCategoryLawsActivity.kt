@@ -3,15 +3,18 @@ package com.electrical.myapplication.theory.laws_and_regulations
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
 
 class ShowCategoryLawsActivity : AppCompatActivity() {
+    var savedInstanceStateFragment: Bundle? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_category_laws)
-
+        savedInstanceStateFragment = savedInstanceState
 
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
         actionBarShow?.apply {
@@ -20,49 +23,24 @@ class ShowCategoryLawsActivity : AppCompatActivity() {
         }
 
         when (intent.getIntExtra(CATEGORY_NAME_LAWS, 0)) {
-
             CATEGORY_LAWS_OHM -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.laws_show_container, ShowOhmFragment())
-                    .commit()
-
+                createFragment(ShowOhmFragment())
             }
             CATEGORY_LAWS_KIRCHHOFF -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.laws_show_container, ShowKirchhoffFragment())
-                    .commit()
+                createFragment(ShowKirchhoffFragment())
             }
             CATEGORY_LAWS_JOULE -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.laws_show_container, ShowJouleFragment())
-                    .commit()
+                createFragment(ShowJouleFragment())
             }
             CATEGORY_LAWS_COULOMB -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.laws_show_container, ShowCoulombFragment())
-                    .commit()
+                createFragment(ShowCoulombFragment())
             }
             CATEGORY_LAWS_RIGHT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.laws_show_container, ShowLawsRightFragment())
-                    .commit()
+                createFragment(ShowLawsRightFragment())
             }
             CATEGORY_LAWS_LEFT -> {
                 title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.laws_show_container, ShowLawsLeftFragment())
-                    .commit()
+                createFragment(ShowLawsLeftFragment())
             }
         }
     }
@@ -75,5 +53,15 @@ class ShowCategoryLawsActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun createFragment(newFragment: Fragment) {
+        title = intent.getStringExtra(ACTION_BAR_TITLE)
+        if (savedInstanceStateFragment == null) {
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.laws_show_container, newFragment)
+                .commit()
+        }
     }
 }

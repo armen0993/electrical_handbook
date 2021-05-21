@@ -25,7 +25,7 @@ class SchemaActivity : AppCompatActivity() {
 
         val recyclerSchema: RecyclerView = schemaBinding.recyclerSchema
         val listSchema: List<SchemaData> = listOf(
-            SchemaData(getString(R.string.title_schema_standart), R.drawable.ic_schema_standard),
+            SchemaData(getString(R.string.title_schema_standard), R.drawable.ic_schema_standard),
             SchemaData(getString(R.string.title_schema_automatic_transfer_switch), R.drawable.ic_schema_automatic_transfer_switch),
             SchemaData(getString(R.string.title_schema_magnetic_switch), R.drawable.ic_schema_magnetic_switch),
             SchemaData(getString(R.string.title_schema_electric_meter), R.drawable.ic_schema_electric_meter),
@@ -36,8 +36,6 @@ class SchemaActivity : AppCompatActivity() {
         val adapterSchema = SchemaAdapter(this, listSchema)
         recyclerSchema.adapter = adapterSchema
         recyclerSchema.layoutManager = LinearLayoutManager(this)
-
-
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -49,6 +47,4 @@ class SchemaActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
-
 }

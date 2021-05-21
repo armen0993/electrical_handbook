@@ -13,7 +13,7 @@
         <activity android:name=".theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity" />
         <activity android:name=".theory.laws_and_regulations.ShowCategoryLawsActivity" />
         <activity android:name=".theory.laws_and_regulations.LawsAndRegulations" />
-        <activity android:name=".theory.basic_concepts.ShowCategoryActivity" />
+        <activity android:name=".theory.basic_concepts.ShowCategoryBasicConceptsActivity" />
         <activity android:name=".theory.basic_concepts.BasicConcepts" />
         <activity android:name=".theory.TheoryActivity"            />
         <activity android:name=".schema.SchemaActivity"/>

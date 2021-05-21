@@ -16,7 +16,7 @@ class ExitFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.exit_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_exit, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -3,78 +3,51 @@ package com.electrical.myapplication.theory.power_plants_and_substations
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivityShowCategorySubstationsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 import com.electrical.myapplication.theory.laws_and_regulations.CATEGORY_NAME_LAWS
 
 class ShowCategorySubstationsActivity : AppCompatActivity() {
+    var savedInstanceStateFragment: Bundle? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        val bindingShowCategorySubstations =  ActivityShowCategorySubstationsBinding.inflate(layoutInflater)
+        val bindingShowCategorySubstations =
+            ActivityShowCategorySubstationsBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(bindingShowCategorySubstations.root)
-
+        savedInstanceStateFragment = savedInstanceState
 
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
         actionBarShow?.apply {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
         }
-        val container = R.id.fragment_container_substations
-
         when (intent.getIntExtra(CATEGORY_NAME_SUBSTATIONS, 0)) {
             CATEGORY_SUBSTATIONS -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowSubstationsFragment())
-                    .commit()
+                createFragment(ShowSubstationsFragment())
             }
             CATEGORY_NUCLEAR_PLANT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowNuclearPlantFragment())
-                    .commit()
+                createFragment(ShowNuclearPlantFragment())
             }
             CATEGORY_THERMAL_POWER_PLANT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowThermalPowerPlantFragment())
-                    .commit()
+                createFragment(ShowThermalPowerPlantFragment())
             }
             CATEGORY_SOLAR_PLANT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowSolarPlantFragment())
-                    .commit()
+                createFragment(ShowSolarPlantFragment())
             }
             CATEGORY_HYDROELECTRIC_PLANT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowSolarPlantFragment())
-                    .commit()
+                createFragment(ShowHydroelectricPlantFragment())
             }
             CATEGORY_WIND_PLANT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowWindPlantFragment())
-                    .commit()
+                createFragment(ShowWindPlantFragment())
             }
             CATEGORY_GEOTHERMAL_PLANT -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(container, ShowGeothermalPlantFragment())
-                    .commit()
+                createFragment(ShowGeothermalPlantFragment())
             }
         }
     }
-
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
@@ -84,5 +57,15 @@ class ShowCategorySubstationsActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun createFragment(newFragment: Fragment) {
+        title = intent.getStringExtra(ACTION_BAR_TITLE)
+        if (savedInstanceStateFragment == null) {
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.fragment_container_substations, newFragment)
+                .commit()
+        }
     }
 }

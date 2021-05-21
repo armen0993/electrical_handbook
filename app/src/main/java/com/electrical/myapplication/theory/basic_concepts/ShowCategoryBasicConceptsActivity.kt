@@ -3,13 +3,17 @@ package com.electrical.myapplication.theory.basic_concepts
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
-class ShowCategoryActivity : AppCompatActivity() {
+class ShowCategoryBasicConceptsActivity : AppCompatActivity() {
+    var savedInstanceStateFragment: Bundle? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_category_concepts)
+        savedInstanceStateFragment = savedInstanceState
 
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
         actionBarShow?.apply {
@@ -19,32 +23,16 @@ class ShowCategoryActivity : AppCompatActivity() {
 
         when (intent.getIntExtra(CATEGORY_NAME_CONCEPTS, 0)) {
             101 -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.container_show_category, ShowVoltageFragment())
-                    .commit()
+                createFragment(ShowVoltageFragment())
             }
             102 -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.container_show_category, ShowCurrentFragment())
-                    .commit()
+                createFragment(ShowCurrentFragment())
             }
             103 -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.container_show_category, ShowResistanceFragment())
-                    .commit()
+                createFragment(ShowResistanceFragment())
             }
             104 -> {
-                title = intent.getStringExtra(ACTION_BAR_TITLE)
-                supportFragmentManager
-                    .beginTransaction()
-                    .add(R.id.container_show_category, ShowPowerFragment())
-                    .commit()
+                createFragment(ShowPowerFragment())
             }
         }
     }
@@ -59,5 +47,13 @@ class ShowCategoryActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-
+    private fun createFragment(newFragment: Fragment) {
+        title = intent.getStringExtra(ACTION_BAR_TITLE)
+        if (savedInstanceStateFragment == null) {
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.container_show_category, newFragment)
+                .commit()
+        }
+    }
 }
