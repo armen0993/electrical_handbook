@@ -29,6 +29,7 @@ class SchemaActivity : AppCompatActivity() {
             SchemaData(getString(R.string.title_schema_automatic_transfer_switch), R.drawable.ic_schema_automatic_transfer_switch),
             SchemaData(getString(R.string.title_schema_magnetic_switch), R.drawable.ic_schema_magnetic_switch),
             SchemaData(getString(R.string.title_schema_electric_meter), R.drawable.ic_schema_electric_meter),
+            SchemaData(getString(R.string.title_schema_impulse_relay), R.drawable.ic_schema_impulse_relay),
             SchemaData(getString(R.string.title_schema_electricalComponents), R.drawable.ic_schema_electrical_components),
             SchemaData(getString(R.string.title_schema_breaker), R.drawable.ic_schema_breaker),
             SchemaData(getString(R.string.title_schema_pass_through_switch), R.drawable.ic_schema_pass_through_switch)

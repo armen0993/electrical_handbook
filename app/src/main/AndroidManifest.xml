@@ -8,6 +8,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
+        <activity android:name=".schema.Standards.Standards" />
         <activity android:name=".theory.power_plants_and_substations.ShowCategorySubstationsActivity" />
         <activity android:name=".theory.power_plants_and_substations.Substations" />
         <activity android:name=".theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity" />
@@ -15,11 +16,12 @@
         <activity android:name=".theory.laws_and_regulations.LawsAndRegulations" />
         <activity android:name=".theory.basic_concepts.ShowCategoryBasicConceptsActivity" />
         <activity android:name=".theory.basic_concepts.BasicConcepts" />
-        <activity android:name=".theory.TheoryActivity"            />
-        <activity android:name=".schema.SchemaActivity"/>
+        <activity android:name=".theory.TheoryActivity" />
+        <activity android:name=".schema.SchemaActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
