@@ -11,7 +11,6 @@ import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 class AutomaticTransferSwitch : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
-
             setContentView(R.layout.activity_automatic_transfer_switch)
 
             title = intent.getStringExtra(ACTION_BAR_TITLE)
