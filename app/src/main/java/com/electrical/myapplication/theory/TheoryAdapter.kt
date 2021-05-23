@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
+import com.electrical.myapplication.theory.electrician_tools.ElectricianToolsActivity
 import com.electrical.myapplication.theory.ip_shield.IpShield
 import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulations
 import com.electrical.myapplication.theory.power_plants_and_substations.Substations
@@ -20,7 +21,7 @@ import com.electrical.myapplication.theory.power_plants_and_substations.Substati
 import com.electrical.myapplication.theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity
 
 @SuppressLint("StaticFieldLeak")
-lateinit var view: View
+
 const val ACTION_BAR_TITLE = "action_title"
 
 class TheoryAdapter(private val context: Context, private val dataTheory: List<TheoryData>) :
@@ -28,7 +29,7 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TheoryViewHolder {
-        view = LayoutInflater.from(context).inflate(R.layout.recycler_theory, parent, false)
+     val   view = LayoutInflater.from(context).inflate(R.layout.recycler_theory, parent, false)
         return TheoryViewHolder(view)
     }
 
@@ -38,10 +39,9 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
         holder.description.text = valueData.description
         holder.imageIcon.setImageResource(valueData.imageIcon)
 
-        view.setOnClickListener() {
-            showTheoryCategory(holder.bindingAdapterPosition)
-            Log.d("position","pos layout = ${holder.bindingAdapterPosition}")
-           // Log.d("position"," positions = $position")
+        holder.itemView.setOnClickListener {
+            showTheoryCategory(holder.layoutPosition)
+
         }
     }
 
@@ -59,35 +59,38 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
     private fun showTheoryCategory(position: Int) {
         when (position) {
             0 -> {
-                Log.d("position","pos = $position")
                 val basicConceptsIntent = Intent(context, BasicConcepts::class.java)
                 basicConceptsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(basicConceptsIntent)
             }
             1 -> {
-                Log.d("position","pos = $position")
                 val lawsAndRegulationsIntent = Intent(context, LawsAndRegulations::class.java)
                 lawsAndRegulationsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(lawsAndRegulationsIntent)
             }
             2 -> {
-                Log.d("position","pos = $position")
                 val serialAndParallelConnectionIntent =
                     Intent(context, SerialAndParallelConnectionActivity::class.java)
-                serialAndParallelConnectionIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+                serialAndParallelConnectionIntent.putExtra(
+                    ACTION_BAR_TITLE,
+                    dataTheory[position].title
+                )
                 context.startActivity(serialAndParallelConnectionIntent)
             }
-            5-> {
-                Log.d("position","pos = $position")
-                 val substationsIntent = Intent(context, Substations::class.java)
-                substationsIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+            5 -> {
+                val substationsIntent = Intent(context, Substations::class.java)
+                substationsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(substationsIntent)
             }
             11 -> {
-                Log.d("position","pos = $position")
                 val ipShieldIntent = Intent(context, IpShield::class.java)
                 ipShieldIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(ipShieldIntent)
+            }
+            12 -> {
+                val electricianToolsIntent = Intent(context,ElectricianToolsActivity::class.java)
+                electricianToolsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
+                context.startActivity(electricianToolsIntent)
             }
         }
     }

@@ -17,32 +17,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".theory.basic_concepts.BasicConcepts">
-
-        <LinearLayout
-            android:id="@+id/substations_position_0"
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="18dp"
             android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_ohm"
-                android:src="@drawable/ic_info_substations_plant" />
-
-            <TextView
-                android:id="@+id/title_substations_plant"
+            android:layout_marginHorizontal="8dp">
+            <LinearLayout
+                android:id="@+id/substations_position_0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/title_electrical_substations"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@string/ic_ohm"
+                    android:src="@drawable/ic_info_substations_plant" />
+
+                <TextView
+                    android:id="@+id/title_substations_plant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16sp"
+                    android:text="@string/title_electrical_substations"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:layout_width="match_parent"
@@ -53,7 +62,14 @@
             android:text="@string/title_substations_category"
             android:textSize="24sp"
             android:textStyle="bold" />
-
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp">
         <LinearLayout
             android:id="@+id/substations_position_1"
             android:layout_width="match_parent"
@@ -79,7 +95,15 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp">
         <LinearLayout
             android:id="@+id/substations_position_2"
             android:layout_width="match_parent"
@@ -105,7 +129,15 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp">
         <LinearLayout
             android:id="@+id/substations_position_3"
             android:layout_width="match_parent"
@@ -131,7 +163,15 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp">
         <LinearLayout
             android:id="@+id/substations_position_4"
             android:layout_width="match_parent"
@@ -157,7 +197,15 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp">
         <LinearLayout
             android:id="@+id/substations_position_5"
             android:layout_width="match_parent"
@@ -183,7 +231,15 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp">
         <LinearLayout
             android:id="@+id/substations_position_6"
             android:layout_width="match_parent"
@@ -209,7 +265,9 @@
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
