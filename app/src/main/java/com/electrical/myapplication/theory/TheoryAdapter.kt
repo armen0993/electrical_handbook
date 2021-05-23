@@ -37,8 +37,11 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
         holder.title.text = valueData.title
         holder.description.text = valueData.description
         holder.imageIcon.setImageResource(valueData.imageIcon)
-        holder.itemView.setOnClickListener {
-            showTheoryCategory(holder.layoutPosition)
+
+        view.setOnClickListener() {
+            showTheoryCategory(holder.bindingAdapterPosition)
+            Log.d("position","pos layout = ${holder.bindingAdapterPosition}")
+           // Log.d("position"," positions = $position")
         }
     }
 
@@ -56,30 +59,32 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
     private fun showTheoryCategory(position: Int) {
         when (position) {
             0 -> {
+                Log.d("position","pos = $position")
                 val basicConceptsIntent = Intent(context, BasicConcepts::class.java)
                 basicConceptsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(basicConceptsIntent)
             }
             1 -> {
+                Log.d("position","pos = $position")
                 val lawsAndRegulationsIntent = Intent(context, LawsAndRegulations::class.java)
                 lawsAndRegulationsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(lawsAndRegulationsIntent)
             }
             2 -> {
+                Log.d("position","pos = $position")
                 val serialAndParallelConnectionIntent =
                     Intent(context, SerialAndParallelConnectionActivity::class.java)
-                serialAndParallelConnectionIntent.putExtra(
-                    ACTION_BAR_TITLE,
-                    dataTheory[position].title
-                )
+                serialAndParallelConnectionIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
                 context.startActivity(serialAndParallelConnectionIntent)
             }
-            5 -> {
-                val substationsIntent = Intent(context, Substations::class.java)
-                substationsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
+            5-> {
+                Log.d("position","pos = $position")
+                 val substationsIntent = Intent(context, Substations::class.java)
+                substationsIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
                 context.startActivity(substationsIntent)
             }
             11 -> {
+                Log.d("position","pos = $position")
                 val ipShieldIntent = Intent(context, IpShield::class.java)
                 ipShieldIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(ipShieldIntent)
