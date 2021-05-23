@@ -46,8 +46,7 @@ class Substations : AppCompatActivity() {
             startActivity(showCategorySubstationsIntent)
         }
         bindingSubstations.substationsPosition1.setOnClickListener() {
-            Log.d("show1", "start")
-            showCategorySubstationsIntent.putExtra(
+              showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsNuclearPlant.text
             )
@@ -55,7 +54,6 @@ class Substations : AppCompatActivity() {
                 CATEGORY_NAME_SUBSTATIONS,
                 CATEGORY_NUCLEAR_PLANT
             )
-
             startActivity(showCategorySubstationsIntent)
         }
         bindingSubstations.substationsPosition2.setOnClickListener() {
