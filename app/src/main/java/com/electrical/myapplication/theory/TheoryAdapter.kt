@@ -77,6 +77,9 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 serialAndParallelConnectionIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
                 context.startActivity(serialAndParallelConnectionIntent)
             }
+            4 -> {
+
+            }
             5-> {
                 Log.d("position","pos = $position")
                  val substationsIntent = Intent(context, Substations::class.java)
