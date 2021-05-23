@@ -8,7 +8,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
-        <activity android:name=".schema.Standards.Standards" />
+        <activity android:name=".theory.ip_shield.IpShield"></activity>
         <activity android:name=".theory.power_plants_and_substations.ShowCategorySubstationsActivity" />
         <activity android:name=".theory.power_plants_and_substations.Substations" />
         <activity android:name=".theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity" />
