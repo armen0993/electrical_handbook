@@ -8,8 +8,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
+        <activity android:name=".theory.sockets_and_plugs.SocketsAndPlugsActivity"></activity>
         <activity android:name=".schema.standards.Standards" />
-        <activity android:name=".theory.electrician_tools.ElectricianToolsActivity"/>
+        <activity android:name=".theory.electrician_tools.ElectricianToolsActivity" />
         <activity android:name=".theory.ip_shield.IpShield" />
         <activity android:name=".schema.automatic_transfer_switch.AutomaticTransferSwitch" />
         <activity android:name=".theory.power_plants_and_substations.ShowCategorySubstationsActivity" />

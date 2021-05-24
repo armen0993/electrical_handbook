@@ -19,6 +19,7 @@ import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulatio
 import com.electrical.myapplication.theory.power_plants_and_substations.Substations
 
 import com.electrical.myapplication.theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity
+import com.electrical.myapplication.theory.sockets_and_plugs.SocketsAndPlugsActivity
 
 @SuppressLint("StaticFieldLeak")
 
@@ -91,6 +92,11 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 val electricianToolsIntent = Intent(context,ElectricianToolsActivity::class.java)
                 electricianToolsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(electricianToolsIntent)
+            }
+            13-> {
+                val socketsAndPlugsIntent = Intent(context,SocketsAndPlugsActivity::class.java)
+                socketsAndPlugsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
+                context.startActivity(socketsAndPlugsIntent)
             }
         }
     }
