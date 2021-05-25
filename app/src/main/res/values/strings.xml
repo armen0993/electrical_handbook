@@ -560,4 +560,17 @@
 \n\nИменно поэтому обращайте внимание на характеристики электроприборов, которые вы собираетесь подключать в отеле, и сопоставляйте их с характеристиками электрической сети той страны, куда решили поехать. Есть такие электроприборы, которые могут без дополнительных трансформаторов работать при напряжении 100-240 Вольт. Если же это не ваш случай, заранее приобретите специальный понижающий/повышающий трансформатор и подключайте технику через него.  </string>
     <string name="icon_description_up_down">icon_description_up_down</string>
     <string name="icon_sockets_and_plugs">icon_sockets_and_plugs</string>
+    <string name="info_title_electromechanical_converters">Электрические машины преобразуют механическую энергию в электрическую и обратно: электрическую — в механическую.\n\n\t\t По направлению преобразования энергии электрические машини разделяют на :</string>
+    <string name="electromechanical_converters_title_0">Трансформатор</string>
+    <string name="electromechanical_converters_title_1">Электрический двигатель</string>
+    <string name="electromechanical_converters_title_2">Генератор</string>
+    <string name="title_schema_magnetic_switch_1">Схема подключения магнитного пускателья</string>
+    <string name="title_schema_magnetic_switch_2">Реверсная схема подключения магнитного пускателья</string>
+    <string name="title_schema_electric_meter_1">Схема подключения однофазного и трехфазного электросчетчика</string>
+    <string name="title_schema_electric_breaker_1">Электрическая схема выключателей</string>
+    <string name="title_schema_electrical_components_1">Обозначения электронных компонентов</string>
+    <string name="title_schema_pass_through_switch_1">Проходной выключатель схема подключения на 2 точки с 1 лампами</string>
+    <string name="title_schema_pass_through_switch_2">Проходной выключатель схема подключения на 2 точки с 2 лампами</string>
+    <string name="title_schema_pass_through_switch_3">Проходной выключатель схема подключения на 3 точки с 1 лампами</string>
+    <string name="title_schema_pass_through_switch_4">Проходной выключатель схема подключения на 3 точки с 2 лампами</string>
 </resources>

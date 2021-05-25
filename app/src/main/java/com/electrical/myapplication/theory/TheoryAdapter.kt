@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
 import com.electrical.myapplication.theory.electrician_tools.ElectricianToolsActivity
+import com.electrical.myapplication.theory.electromechanical_converters.ElectromechanicalConvertersActivity
 import com.electrical.myapplication.theory.ip_shield.IpShield
 import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulations
 import com.electrical.myapplication.theory.power_plants_and_substations.Substations
@@ -30,7 +31,7 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TheoryViewHolder {
-     val   view = LayoutInflater.from(context).inflate(R.layout.recycler_theory, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.recycler_theory, parent, false)
         return TheoryViewHolder(view)
     }
 
@@ -83,18 +84,23 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 substationsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(substationsIntent)
             }
+            7 -> {
+                val electromechanicalConverterIntent = Intent(context,ElectromechanicalConvertersActivity::class.java)
+                electromechanicalConverterIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+                context.startActivity(electromechanicalConverterIntent)
+            }
             11 -> {
                 val ipShieldIntent = Intent(context, IpShield::class.java)
                 ipShieldIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(ipShieldIntent)
             }
             12 -> {
-                val electricianToolsIntent = Intent(context,ElectricianToolsActivity::class.java)
+                val electricianToolsIntent = Intent(context, ElectricianToolsActivity::class.java)
                 electricianToolsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(electricianToolsIntent)
             }
-            13-> {
-                val socketsAndPlugsIntent = Intent(context,SocketsAndPlugsActivity::class.java)
+            13 -> {
+                val socketsAndPlugsIntent = Intent(context, SocketsAndPlugsActivity::class.java)
                 socketsAndPlugsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(socketsAndPlugsIntent)
             }

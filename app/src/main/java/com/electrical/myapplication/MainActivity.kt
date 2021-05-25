@@ -28,12 +28,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.imageExit.setOnClickListener {
+
             supportFragmentManager
                 .beginTransaction()
                 .addToBackStack("exit")
                 .add(R.id.container, ExitFragment())
                 .commit()
         }
+        binding.imageSchema.clipToOutline
+
+
 
         binding.imageCalc.setOnClickListener {
             Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
