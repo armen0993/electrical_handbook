@@ -1,13 +1,19 @@
 package com.electrical.myapplication
 
 import android.annotation.SuppressLint
+import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.electrical.myapplication.databinding.ActivityMainBinding
 import com.electrical.myapplication.schema.SchemaActivity
 import com.electrical.myapplication.table.TableActivity
@@ -42,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             intentSchema.putExtra(ACTION_BAR_TITLE,binding.textSchema.text)
             startActivity(intentSchema)
         }
-        binding.imageTheory.setOnClickListener {
+        binding.imageTheory.setOnClickListener() {
             val intentTheory = Intent(this, TheoryActivity::class.java)
             startActivity(intentTheory)
         }

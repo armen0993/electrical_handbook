@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
+import com.electrical.myapplication.theory.earthing_systems.EarthingSystemsActivity
 import com.electrical.myapplication.theory.electrician_tools.ElectricianToolsActivity
 import com.electrical.myapplication.theory.electromechanical_converters.ElectromechanicalConvertersActivity
 import com.electrical.myapplication.theory.ip_shield.IpShield
@@ -88,6 +89,11 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 val electromechanicalConverterIntent = Intent(context,ElectromechanicalConvertersActivity::class.java)
                 electromechanicalConverterIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
                 context.startActivity(electromechanicalConverterIntent)
+            }
+            8 -> {
+                val earthingSystemsIntent = Intent(context,EarthingSystemsActivity::class.java)
+                earthingSystemsIntent.putExtra(ACTION_BAR_TITLE,dataTheory[position].title)
+                context.startActivity(earthingSystemsIntent)
             }
             11 -> {
                 val ipShieldIntent = Intent(context, IpShield::class.java)

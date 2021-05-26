@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.electrical.myapplication.R
+import com.electrical.myapplication.databinding.ActivityStandardsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
 class Standards : AppCompatActivity() {

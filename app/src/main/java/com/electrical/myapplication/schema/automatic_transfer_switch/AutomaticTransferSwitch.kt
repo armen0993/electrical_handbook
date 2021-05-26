@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.electrical.myapplication.R
+import com.electrical.myapplication.databinding.ActivityAutomaticTransferSwitchBinding
+import com.electrical.myapplication.databinding.ActivityStandardsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
 class AutomaticTransferSwitch : AppCompatActivity() {

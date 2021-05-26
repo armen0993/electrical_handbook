@@ -1,5 +1,6 @@
 package com.electrical.myapplication.schema
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -31,7 +32,7 @@ class SchemaAdapter(private val context: Context, private val dataSchema:List<Sc
         holder.titleSchema.text= valueData.title
         holder.imageIconSchema.setImageResource(valueData.imageIcon)
 
-        holder.itemView.setOnClickListener {
+        holder.itemView.setOnClickListener() {
             showSchemaCategory(holder.layoutPosition)
         }
     }
@@ -40,8 +41,12 @@ class SchemaAdapter(private val context: Context, private val dataSchema:List<Sc
         return dataSchema.size
     }
     class SchemaViewHolder(view: View): RecyclerView.ViewHolder(view){
-        val titleSchema: TextView = view.findViewById(R.id.title_schema)
-        val imageIconSchema: ImageView = view.findViewById(R.id.img_icon_schema)
+        val titleSchema: TextView
+        val imageIconSchema: ImageView
+        init {
+            titleSchema = view.findViewById(R.id.title_schema)
+            imageIconSchema = view.findViewById(R.id.img_icon_schema)
+        }
 
     }
     private fun showSchemaCategory(position: Int) {
