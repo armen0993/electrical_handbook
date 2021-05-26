@@ -8,8 +8,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
+        <activity android:name=".table.fuse.Fuse"></activity>
+        <activity android:name=".table.selection_of_circuit_breaker.SelectionOfCircuitBreaker" />
+        <activity android:name=".table.cable_cross_section.CableCrossSection" />
         <activity android:name=".theory.earthing_systems.ShowCategoryEarthingSystemsActivity" />
-        <activity android:name=".table.TableActivity"/>
+        <activity android:name=".table.TableActivity" />
         <activity android:name=".theory.earthing_systems.EarthingSystemsActivity" />
         <activity android:name=".schema.pass_through_switch.PassThroughSwitch" />
         <activity android:name=".schema.electric_breaker.ElectricBreaker" />

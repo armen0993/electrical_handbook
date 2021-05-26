@@ -24,7 +24,9 @@ class TableActivity : AppCompatActivity() {
 
         val recyclerTable = tableBinding.recyclerTable
         val tableList= listOf(
-            TableData("name",R.drawable.ic_basic_concepts_i)
+            TableData("Выбор сечения кабеля",R.drawable.ic_table_cable_cross_section),
+            TableData("Выбор автоматического выключателя",R.drawable.ic_table_selection_of_circuit_breaker),
+            TableData("Выбор предохранителя",R.drawable.ic_table_fuse),
         )
         val adapterTable = TableAdapter(this,tableList)
         recyclerTable.adapter = adapterTable

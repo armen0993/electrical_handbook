@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.imageTable.setOnClickListener {
             val intentTable = Intent(this, TableActivity::class.java)
+            intentTable.putExtra(ACTION_BAR_TITLE,binding.textTable.text)
             startActivity(intentTable)
         }
 
