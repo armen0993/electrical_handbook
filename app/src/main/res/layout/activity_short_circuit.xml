@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".theory.short_circuit.ShortCircuitActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_title_short_circuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_1" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_3"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_2" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_4"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_3"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_3" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_5"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_4"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_4" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_6"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_5"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_1" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_7"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_5" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_8"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_7"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_6" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_3"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_9"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_10"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_8"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_7" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_11"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_9"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_8" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_12"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_13"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_14"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_10"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_9" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_7"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_15"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_11"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_10" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_8"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_16"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_12"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_11" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_9"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_17"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_13"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_12" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_10"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_14"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_13" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_11"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_15"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_14" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_18"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_title_short_circuit_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_short_circuit_13"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_19"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_16"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_15" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_short_circuit_20"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_short_circuit_18"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:contentDescription="@string/ic_short_circuit"
+                android:src="@drawable/ic_info_short_circuit_17" />
+
+            <TextView
+                android:id="@+id/info_description_short_circuit_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/info_description_short_circuit_21"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

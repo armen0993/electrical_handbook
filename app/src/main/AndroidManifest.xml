@@ -3,12 +3,16 @@
     package="com.electrical.myapplication">
 
     <application
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
-        <activity android:name=".table.fuse.Fuse"></activity>
+        <activity android:name=".theory.electrical_measuring_instruments.ShowElectricalMeasuringInstrumentsActivity" />
+        <activity android:name=".theory.electrical_measuring_instruments.ElectricalMeasuringInstrumentsActivity" />
+        <activity android:name=".theory.short_circuit.ShortCircuitActivity" />
+        <activity android:name=".table.fuse.Fuse" />
         <activity android:name=".table.selection_of_circuit_breaker.SelectionOfCircuitBreaker" />
         <activity android:name=".table.cable_cross_section.CableCrossSection" />
         <activity android:name=".theory.earthing_systems.ShowCategoryEarthingSystemsActivity" />

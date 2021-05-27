@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_1"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_1"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_1"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_1" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_2"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_2"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_3"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_2"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_2" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_4"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_3"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_3" />
+            <TextView
+            android:id="@+id/info_description_measuring_ohms_meter_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/info_description_measuring_ohms_meter_5"
+            android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_3"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_6"
+                android:textSize="16sp" />
+           <ImageView
+            android:id="@+id/info_ic_measuring_current_meter_4"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/ic_measuring_ohms_meter"
+            android:src="@drawable/ic_info_measuring_ohms_meter_4" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_7"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_4"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_8"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_9"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_5"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_5" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_6"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_6" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_10"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_7"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_7" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_7"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_11"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_8"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_8" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_12"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_9"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_9" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_8"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_13"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_10"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_10" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_14"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_9"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_15"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_11"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_11" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_16"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_12"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_12" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_17"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_10"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_18"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_11"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_19"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_13"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_13" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_14"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_14" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_12"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_20"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/info_title_measuring_ohms_meter_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/info_title_measuring_ohms_meter_13"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/info_description_measuring_ohms_meter_21"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_15"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_15" />
+            <ImageView
+                android:id="@+id/info_ic_measuring_current_meter_16"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/ic_measuring_ohms_meter"
+                android:src="@drawable/ic_info_measuring_ohms_meter_16" />
+            <TextView
+                android:id="@+id/info_description_measuring_ohms_meter_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/info_description_measuring_ohms_meter_22"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
