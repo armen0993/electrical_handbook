@@ -1,273 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".theory.power_plants_and_substations.Substations">
+    android:background="@color/backgroundColor">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/backgroundColor"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".theory.basic_concepts.BasicConcepts">
-        <androidx.cardview.widget.CardView
+        android:layout_height="wrap_content"
+        tools:context=".theory.power_plants_and_substations.Substations">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="18dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-            <LinearLayout
-                android:id="@+id/substations_position_0"
+            tools:context=".theory.basic_concepts.BasicConcepts">
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_ohm"
-                    android:src="@drawable/ic_info_substations_plant" />
-
-                <TextView
-                    android:id="@+id/title_substations_plant"
+                <LinearLayout
+                    android:id="@+id/substations_position_0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/title_electrical_substations"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_ohm"
+                        android:src="@drawable/ic_info_substations_plant" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="16sp"
-            android:gravity="center_horizontal"
-            android:text="@string/title_substations_category"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="18dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-        <LinearLayout
-            android:id="@+id/substations_position_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/title_substations_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_electrical_substations"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_nuclear_energy"
-                android:src="@drawable/ic_info_substations_nuclear_plant" />
 
             <TextView
-                android:id="@+id/title_substations_nuclear_plant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginStart="16sp"
-                android:text="@string/title_substations_category_nuclear"
+                android:gravity="center_horizontal"
+                android:text="@string/title_substations_category"
                 android:textSize="24sp"
                 android:textStyle="bold" />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="18dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-        <LinearLayout
-            android:id="@+id/substations_position_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_thermal_power"
-                android:src="@drawable/ic_info_substations_thermal_power_plant" />
-
-            <TextView
-                android:id="@+id/title_substations_thermal_power_plant"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/title_substations_category_thermal"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-        <LinearLayout
-            android:id="@+id/substations_position_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_solar_energy"
-                android:src="@drawable/ic_info_substations_solar_plant" />
+                <LinearLayout
+                    android:id="@+id/substations_position_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/title_substations_solar_plant"
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_nuclear_energy"
+                        android:src="@drawable/ic_info_substations_nuclear_plant" />
+
+                    <TextView
+                        android:id="@+id/title_substations_nuclear_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_substations_category_nuclear"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/title_substations_category_solar"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-        <LinearLayout
-            android:id="@+id/substations_position_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_hydroelectric_plant"
-                android:src="@drawable/ic_info_substations_hydroelectric_plant" />
+                <LinearLayout
+                    android:id="@+id/substations_position_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/title_substations_hydroelectric_plant"
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_thermal_power"
+                        android:src="@drawable/ic_info_substations_thermal_power_plant" />
+
+                    <TextView
+                        android:id="@+id/title_substations_thermal_power_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_substations_category_thermal"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/title_substations_category_hydroelectric"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-        <LinearLayout
-            android:id="@+id/substations_position_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_wind_energy"
-                android:src="@drawable/ic_info_substations_wind_plant" />
+                <LinearLayout
+                    android:id="@+id/substations_position_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/title_substations_wind_plant"
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_solar_energy"
+                        android:src="@drawable/ic_info_substations_solar_plant" />
+
+                    <TextView
+                        android:id="@+id/title_substations_solar_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_substations_category_solar"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/title_substations_category_wind_energy"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:cardCornerRadius="24dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginHorizontal="8dp">
-        <LinearLayout
-            android:id="@+id/substations_position_6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/white"
-            android:clickable="true"
-            android:orientation="horizontal">
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:contentDescription="@string/ic_geothermal_energy"
-                android:src="@drawable/ic_info_substations_geothermal_plant" />
+                <LinearLayout
+                    android:id="@+id/substations_position_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/title_substations_geothermal_plant"
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_hydroelectric_plant"
+                        android:src="@drawable/ic_info_substations_hydroelectric_plant" />
+
+                    <TextView
+                        android:id="@+id/title_substations_hydroelectric_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_substations_category_hydroelectric"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16sp"
-                android:text="@string/title_substations_category_geothermal_energy"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/substations_position_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_wind_energy"
+                        android:src="@drawable/ic_info_substations_wind_plant" />
+
+                    <TextView
+                        android:id="@+id/title_substations_wind_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_substations_category_wind_energy"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/substations_position_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_geothermal_energy"
+                        android:src="@drawable/ic_info_substations_geothermal_plant" />
+
+                    <TextView
+                        android:id="@+id/title_substations_geothermal_plant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/title_substations_category_geothermal_energy"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-    </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

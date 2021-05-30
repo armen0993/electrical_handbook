@@ -8,7 +8,7 @@ import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
 class ShowCategoryBasicConceptsActivity : AppCompatActivity() {
-    var savedInstanceStateFragment: Bundle? = null
+    private var savedInstanceStateFragment: Bundle? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,5 +55,10 @@ class ShowCategoryBasicConceptsActivity : AppCompatActivity() {
                 .add(R.id.container_show_category, newFragment)
                 .commit()
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(R.anim.right_in, R.anim.left_out)
     }
 }

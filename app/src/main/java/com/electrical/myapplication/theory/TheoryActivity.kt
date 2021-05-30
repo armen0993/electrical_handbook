@@ -1,7 +1,6 @@
 package com.electrical.myapplication.theory
 
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -98,9 +97,20 @@ class TheoryActivity : AppCompatActivity() {
         when (item.itemId) {
             android.R.id.home -> {
                 finish()
+
                 return true
             }
         }
         return super.onOptionsItemSelected(item)
     }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
+
+    }
+
 }

@@ -3,13 +3,13 @@ package com.electrical.myapplication.theory.electrician_tools
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.TextView
+
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivityElectricanToolsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
-import com.electrical.myapplication.theory.TheoryAdapter
+
 
 class ElectricianToolsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class ElectricianToolsActivity : AppCompatActivity() {
         }
         val recyclerElectricianTools: RecyclerView =
             bindingElectricianTools.recyclerElectricianTools
-        val listElectricianTools = listOf<ElectricianToolsData>(
+        val listElectricianTools = listOf(
             ElectricianToolsData(
                 getString(R.string.info_title_electrician_tools),
                 getString(R.string.info_description_electrician_tools),
@@ -129,5 +129,12 @@ class ElectricianToolsActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
     }
 }

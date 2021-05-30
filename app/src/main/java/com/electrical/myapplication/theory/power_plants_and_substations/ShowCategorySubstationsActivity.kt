@@ -68,4 +68,8 @@ class ShowCategorySubstationsActivity : AppCompatActivity() {
                 .commit()
         }
     }
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(R.anim.right_in, R.anim.left_out)
+    }
 }

@@ -6,11 +6,10 @@ import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
-import com.electrical.myapplication.theory.electromechanical_converters.CATEGORY_TRANSFORMER
-import com.electrical.myapplication.theory.electromechanical_converters.ShowTransformerFragment
+
 
 class ShowElectricalMeasuringInstrumentsActivity : AppCompatActivity() {
-    var savedInstanceStateFragment: Bundle? = null
+    private var savedInstanceStateFragment: Bundle? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,5 +64,10 @@ class ShowElectricalMeasuringInstrumentsActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(R.anim.right_in, R.anim.left_out)
     }
 }

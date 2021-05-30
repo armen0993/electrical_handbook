@@ -37,27 +37,27 @@ class LawsAndRegulations : AppCompatActivity() {
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_OHM)
             startActivity(lawsShowIntent)
         }
-        bindingLaws.lawsPosition1.setOnClickListener() {
+        bindingLaws.lawsPosition1.setOnClickListener {
             lawsShowIntent.putExtra(ACTION_BAR_TITLE, bindingLaws.lawsTitleBasicConcepts1.text)
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_KIRCHHOFF)
             startActivity(lawsShowIntent)
         }
-        bindingLaws.lawsPosition2.setOnClickListener() {
+        bindingLaws.lawsPosition2.setOnClickListener {
             lawsShowIntent.putExtra(ACTION_BAR_TITLE, bindingLaws.lawsTitleBasicConcepts2.text)
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_JOULE)
             startActivity(lawsShowIntent)
         }
-        bindingLaws.lawsPosition3.setOnClickListener() {
+        bindingLaws.lawsPosition3.setOnClickListener {
             lawsShowIntent.putExtra(ACTION_BAR_TITLE, bindingLaws.lawsTitleBasicConcepts3.text)
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_COULOMB)
             startActivity(lawsShowIntent)
         }
-        bindingLaws.lawsPosition4.setOnClickListener() {
+        bindingLaws.lawsPosition4.setOnClickListener {
             lawsShowIntent.putExtra(ACTION_BAR_TITLE, bindingLaws.lawsTitleBasicConcepts4.text)
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_RIGHT)
             startActivity(lawsShowIntent)
         }
-        bindingLaws.lawsPosition5.setOnClickListener() {
+        bindingLaws.lawsPosition5.setOnClickListener {
             lawsShowIntent.putExtra(ACTION_BAR_TITLE, bindingLaws.lawsTitleBasicConcepts5.text)
             lawsShowIntent.putExtra(CATEGORY_NAME_LAWS, CATEGORY_LAWS_LEFT)
             startActivity(lawsShowIntent)
@@ -72,5 +72,14 @@ class LawsAndRegulations : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
     }
 }

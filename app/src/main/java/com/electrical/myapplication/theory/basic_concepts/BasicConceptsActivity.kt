@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivityBasicConceptsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
@@ -29,7 +30,7 @@ class BasicConcepts : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
 
-        bindingBasicConcepts.position0.setOnClickListener() {
+        bindingBasicConcepts.position0.setOnClickListener {
             intentShowCategoryConcepts.putExtra(
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts0.text
@@ -37,7 +38,7 @@ class BasicConcepts : AppCompatActivity() {
             intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, VOLTAGE_CATEGORY)
             startActivity(intentShowCategoryConcepts)
         }
-        bindingBasicConcepts.position1.setOnClickListener() {
+        bindingBasicConcepts.position1.setOnClickListener {
             intentShowCategoryConcepts.putExtra(
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts1.text
@@ -45,7 +46,7 @@ class BasicConcepts : AppCompatActivity() {
             intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, CURRENT_CATEGORY)
             startActivity(intentShowCategoryConcepts)
         }
-        bindingBasicConcepts.position2.setOnClickListener() {
+        bindingBasicConcepts.position2.setOnClickListener {
             intentShowCategoryConcepts.putExtra(
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts2.text
@@ -53,7 +54,7 @@ class BasicConcepts : AppCompatActivity() {
             intentShowCategoryConcepts.putExtra(CATEGORY_NAME_CONCEPTS, RESISTANCE_CATEGORY)
             startActivity(intentShowCategoryConcepts)
         }
-        bindingBasicConcepts.position3.setOnClickListener() {
+        bindingBasicConcepts.position3.setOnClickListener {
             intentShowCategoryConcepts.putExtra(
                 ACTION_BAR_TITLE,
                 bindingBasicConcepts.titleBasicConcepts3.text
@@ -72,4 +73,14 @@ class BasicConcepts : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
+    }
+
 }

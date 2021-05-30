@@ -35,16 +35,10 @@ class ElectricianToolsAdapter(
     }
 
     class ElectricianToolsViewHolder(viewTools: View) : RecyclerView.ViewHolder(viewTools) {
-        val titleTools: TextView
-        val descriptionTools: TextView
-        val iconElectricianTools1: ImageView
+        val titleTools: TextView = viewTools.findViewById(R.id.title_electrician_tools)
+        val descriptionTools: TextView = viewTools.findViewById(R.id.description_electrician_tools)
+        val iconElectricianTools1: ImageView = viewTools.findViewById(R.id.icon_electrician_tools_1)
 
 
-        init {
-            titleTools = viewTools.findViewById(R.id.title_electrician_tools)
-            descriptionTools = viewTools.findViewById(R.id.description_electrician_tools)
-            iconElectricianTools1 = viewTools.findViewById(R.id.icon_electrician_tools_1)
-
-        }
     }
 }

@@ -38,6 +38,7 @@ class ElectromechanicalConvertersActivity : AppCompatActivity() {
                 CATEGORY_NAME_ELECTROMECHANICAL_CONVERTERS, CATEGORY_TRANSFORMER
             )
             startActivity(showElectromechanicalConvertersIntent)
+            overridePendingTransition(R.anim.right_in, R.anim.left_out)
 
         }
         bindingElectromechanicalConverters.layoutElectromechanicalConvertersPosition1.setOnClickListener {
@@ -66,9 +67,18 @@ class ElectromechanicalConvertersActivity : AppCompatActivity() {
         when (item.itemId) {
             android.R.id.home -> {
                 finish()
+
                 return true
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
     }
 }

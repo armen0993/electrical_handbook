@@ -28,4 +28,11 @@ class IpShield : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
+    }
 }

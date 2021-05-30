@@ -3,12 +3,11 @@ package com.electrical.myapplication.theory
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.util.Log
+
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ExpandableListView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -20,8 +19,8 @@ import com.electrical.myapplication.theory.electrician_tools.ElectricianToolsAct
 import com.electrical.myapplication.theory.electromechanical_converters.ElectromechanicalConvertersActivity
 import com.electrical.myapplication.theory.ip_shield.IpShield
 import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulations
+import com.electrical.myapplication.theory.lighting.LightingActivity
 import com.electrical.myapplication.theory.power_plants_and_substations.Substations
-
 import com.electrical.myapplication.theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity
 import com.electrical.myapplication.theory.short_circuit.ShortCircuitActivity
 import com.electrical.myapplication.theory.sockets_and_plugs.SocketsAndPlugsActivity
@@ -68,6 +67,7 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 val basicConceptsIntent = Intent(context, BasicConcepts::class.java)
                 basicConceptsIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(basicConceptsIntent)
+
             }
             1 -> {
                 val lawsAndRegulationsIntent = Intent(context, LawsAndRegulations::class.java)
@@ -82,6 +82,12 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                     dataTheory[position].title
                 )
                 context.startActivity(serialAndParallelConnectionIntent)
+            }
+            3 -> {
+                val lightingIntent = Intent(context, LightingActivity::class.java)
+                lightingIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
+                context.startActivity(lightingIntent)
+
             }
             5 -> {
                 val substationsIntent = Intent(context, Substations::class.java)
@@ -130,4 +136,5 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
             }
         }
     }
+
 }

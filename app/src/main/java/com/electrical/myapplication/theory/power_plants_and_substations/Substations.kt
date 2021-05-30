@@ -3,7 +3,7 @@ package com.electrical.myapplication.theory.power_plants_and_substations
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+
 import android.view.MenuItem
 import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivitySubstationsBinding
@@ -45,8 +45,8 @@ class Substations : AppCompatActivity() {
             showCategorySubstationsIntent.putExtra(CATEGORY_NAME_SUBSTATIONS, CATEGORY_SUBSTATIONS)
             startActivity(showCategorySubstationsIntent)
         }
-        bindingSubstations.substationsPosition1.setOnClickListener() {
-              showCategorySubstationsIntent.putExtra(
+        bindingSubstations.substationsPosition1.setOnClickListener {
+            showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsNuclearPlant.text
             )
@@ -56,7 +56,7 @@ class Substations : AppCompatActivity() {
             )
             startActivity(showCategorySubstationsIntent)
         }
-        bindingSubstations.substationsPosition2.setOnClickListener() {
+        bindingSubstations.substationsPosition2.setOnClickListener {
             showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsThermalPowerPlant.text
@@ -67,7 +67,7 @@ class Substations : AppCompatActivity() {
             )
             startActivity(showCategorySubstationsIntent)
         }
-        bindingSubstations.substationsPosition3.setOnClickListener() {
+        bindingSubstations.substationsPosition3.setOnClickListener {
             showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsSolarPlant.text
@@ -75,7 +75,7 @@ class Substations : AppCompatActivity() {
             showCategorySubstationsIntent.putExtra(CATEGORY_NAME_SUBSTATIONS, CATEGORY_SOLAR_PLANT)
             startActivity(showCategorySubstationsIntent)
         }
-        bindingSubstations.substationsPosition4.setOnClickListener() {
+        bindingSubstations.substationsPosition4.setOnClickListener {
             showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsHydroelectricPlant.text
@@ -86,7 +86,7 @@ class Substations : AppCompatActivity() {
             )
             startActivity(showCategorySubstationsIntent)
         }
-        bindingSubstations.substationsPosition5.setOnClickListener() {
+        bindingSubstations.substationsPosition5.setOnClickListener {
             showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsWindPlant.text
@@ -94,7 +94,7 @@ class Substations : AppCompatActivity() {
             showCategorySubstationsIntent.putExtra(CATEGORY_NAME_SUBSTATIONS, CATEGORY_WIND_PLANT)
             startActivity(showCategorySubstationsIntent)
         }
-        bindingSubstations.substationsPosition6.setOnClickListener() {
+        bindingSubstations.substationsPosition6.setOnClickListener {
             showCategorySubstationsIntent.putExtra(
                 ACTION_BAR_TITLE,
                 bindingSubstations.titleSubstationsGeothermalPlant.text
@@ -115,5 +115,13 @@ class Substations : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
     }
 }

@@ -9,7 +9,7 @@ import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
 
 class ShowCategoryLawsActivity : AppCompatActivity() {
-    var savedInstanceStateFragment: Bundle? = null
+    private var savedInstanceStateFragment: Bundle? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +49,7 @@ class ShowCategoryLawsActivity : AppCompatActivity() {
         when (item.itemId) {
             android.R.id.home -> {
                 finish()
+                overridePendingTransition(R.anim.right_in, R.anim.left_out)
                 return true
             }
         }
@@ -63,5 +64,10 @@ class ShowCategoryLawsActivity : AppCompatActivity() {
                 .add(R.id.laws_show_container, newFragment)
                 .commit()
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(R.anim.right_in, R.anim.left_out)
     }
 }

@@ -1,244 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".theory.laws_and_regulations.LawsAndRegulations">
+    android:background="@color/backgroundColor">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/backgroundColor"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".theory.basic_concepts.BasicConcepts">
+        android:layout_height="wrap_content"
+        tools:context=".theory.laws_and_regulations.LawsAndRegulations">
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="24dp"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".theory.basic_concepts.BasicConcepts">
 
-            <LinearLayout
-                android:id="@+id/laws_position_0"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/laws_img_icon_0"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_ohm"
-                    android:src="@drawable/ic_laws_ohm" />
-
-                <TextView
-                    android:id="@+id/laws_title_basic_concepts_0"
+                <LinearLayout
+                    android:id="@+id/laws_position_0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/laws_title_ohm"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/laws_img_icon_0"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_ohm"
+                        android:src="@drawable/ic_laws_ohm" />
 
-            <LinearLayout
-                android:id="@+id/laws_position_1"
+                    <TextView
+                        android:id="@+id/laws_title_basic_concepts_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/laws_title_ohm"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/laws_img_icon_1"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_kirchhoff"
-                    android:src="@drawable/ic_laws_kirchhoff" />
-
-                <TextView
-                    android:id="@+id/laws_title_basic_concepts_1"
+                <LinearLayout
+                    android:id="@+id/laws_position_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/laws_title_kirchhoff"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/laws_img_icon_1"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_kirchhoff"
+                        android:src="@drawable/ic_laws_kirchhoff" />
 
-            <LinearLayout
-                android:id="@+id/laws_position_2"
+                    <TextView
+                        android:id="@+id/laws_title_basic_concepts_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/laws_title_kirchhoff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/laws_img_icon_2"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_joule"
-                    android:src="@drawable/ic_laws_joule" />
-
-                <TextView
-                    android:id="@+id/laws_title_basic_concepts_2"
+                <LinearLayout
+                    android:id="@+id/laws_position_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/laws_title_joule"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/laws_img_icon_2"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_joule"
+                        android:src="@drawable/ic_laws_joule" />
 
-            <LinearLayout
-                android:id="@+id/laws_position_3"
+                    <TextView
+                        android:id="@+id/laws_title_basic_concepts_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/laws_title_joule"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/laws_img_icon_3"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_coulomb"
-                    android:src="@drawable/ic_laws_coulomb" />
-
-                <TextView
-                    android:id="@+id/laws_title_basic_concepts_3"
+                <LinearLayout
+                    android:id="@+id/laws_position_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/laws_title_coulomb"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/laws_img_icon_3"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_coulomb"
+                        android:src="@drawable/ic_laws_coulomb" />
 
-            <LinearLayout
-                android:id="@+id/laws_position_4"
+                    <TextView
+                        android:id="@+id/laws_title_basic_concepts_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/laws_title_coulomb"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/laws_img_icon_4"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_laws_right"
-                    android:src="@drawable/ic_laws_right" />
-
-                <TextView
-                    android:id="@+id/laws_title_basic_concepts_4"
+                <LinearLayout
+                    android:id="@+id/laws_position_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/laws_title_right"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="8dp"
-            app:cardCornerRadius="24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/laws_img_icon_4"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_laws_right"
+                        android:src="@drawable/ic_laws_right" />
 
-            <LinearLayout
-                android:id="@+id/laws_position_5"
+                    <TextView
+                        android:id="@+id/laws_title_basic_concepts_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/laws_title_right"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="8dp"
                 android:layout_marginTop="8dp"
-                android:background="@color/white"
-                android:clickable="true"
-                android:orientation="horizontal">
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <ImageView
-                    android:id="@+id/laws_img_icon_5"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:contentDescription="@string/ic_laws_left"
-                    android:src="@drawable/ic_laws_left" />
-
-                <TextView
-                    android:id="@+id/laws_title_basic_concepts_5"
+                <LinearLayout
+                    android:id="@+id/laws_position_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16sp"
-                    android:text="@string/laws_title_left"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                    <ImageView
+                        android:id="@+id/laws_img_icon_5"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="@string/ic_laws_left"
+                        android:src="@drawable/ic_laws_left" />
+
+                    <TextView
+                        android:id="@+id/laws_title_basic_concepts_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16sp"
+                        android:text="@string/laws_title_left"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

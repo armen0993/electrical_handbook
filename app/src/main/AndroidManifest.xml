@@ -3,12 +3,14 @@
     package="com.electrical.myapplication">
 
     <application
-        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
+        <activity android:name=".theory.lighting.ShowCategoryLighting" />
+        <activity android:name=".theory.lighting.LightingActivity"/>
+
         <activity android:name=".theory.electrical_measuring_instruments.ShowElectricalMeasuringInstrumentsActivity" />
         <activity android:name=".theory.electrical_measuring_instruments.ElectricalMeasuringInstrumentsActivity" />
         <activity android:name=".theory.short_circuit.ShortCircuitActivity" />
@@ -37,16 +39,20 @@
         <activity android:name=".theory.laws_and_regulations.LawsAndRegulations" />
         <activity android:name=".theory.basic_concepts.ShowCategoryBasicConceptsActivity" />
         <activity android:name=".theory.basic_concepts.BasicConcepts" />
-        <activity android:name=".theory.TheoryActivity" />
+        <activity android:name=".theory.TheoryActivity"/>
+
         <activity android:name=".schema.SchemaActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.SENDTO" />
+
                 <data android:scheme="mailto" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

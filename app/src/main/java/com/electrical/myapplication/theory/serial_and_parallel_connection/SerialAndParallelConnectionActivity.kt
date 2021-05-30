@@ -21,8 +21,8 @@ class SerialAndParallelConnectionActivity : AppCompatActivity() {
         }
 
 
-
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
@@ -31,5 +31,13 @@ class SerialAndParallelConnectionActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
     }
 }

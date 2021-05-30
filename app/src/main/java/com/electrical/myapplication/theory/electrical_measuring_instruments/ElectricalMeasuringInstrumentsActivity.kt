@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivityElectricalMeasuringInstrumentsBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
@@ -112,5 +113,12 @@ class ElectricalMeasuringInstrumentsActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
     }
 }

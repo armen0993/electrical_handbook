@@ -54,4 +54,9 @@ class ShowCategoryConverters : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+    override fun onPause() {
+        super.onPause()
+        overridePendingTransition(R.anim.right_in, R.anim.left_out)
+    }
 }

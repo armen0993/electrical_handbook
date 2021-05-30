@@ -10,4 +10,7 @@
     <color name="backgroundView">#16344C</color>
     <color name="backgroundRecycler">#BB9EED</color>
     <color name="backgroundColor">#52A9ED</color>
+    <color name="backgroundYellow">#FAF605</color>
+    <color name="backgroundGreen">#0A9500</color>
+
 </resources>

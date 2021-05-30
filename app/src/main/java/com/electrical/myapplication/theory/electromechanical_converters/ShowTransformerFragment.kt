@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 
-class ShowTransformerFragment:Fragment() {
+class ShowTransformerFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return  inflater.inflate(R.layout.fragment_show_el_converter_transformer,container,false)
+        return inflater.inflate(R.layout.fragment_show_el_converter_transformer, container, false)
     }
 }
