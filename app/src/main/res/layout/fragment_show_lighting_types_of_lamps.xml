@@ -163,6 +163,7 @@
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -238,6 +239,7 @@
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -313,6 +315,7 @@
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -379,6 +382,460 @@
 
                     <TextView
                         android:id="@+id/description_lighting_types_of_lamps_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/backgroundGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundYellow">
+
+                <TextView
+                    android:id="@+id/title_lighting_types_of_lamps_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info_title_lighting_types_of_lamps_5"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_lighting_types_of_lamps_5"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/icon_lighting_types_of_lamps"
+                    android:src="@drawable/icon_lighting_types_of_lamps_5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_lighting_types_of_lamps_5" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_description_lighting_types_of_lamps_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_lighting_types_of_lamps_5"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/icon_description_up_down_5"
+                        android:layout_width="48sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_sockets_plugs_down"
+                        android:contentDescription="@string/icon_description_up_down" />
+
+                    <TextView
+                        android:id="@+id/description_lighting_types_of_lamps_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/backgroundGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundYellow">
+
+                <TextView
+                    android:id="@+id/title_lighting_types_of_lamps_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info_title_lighting_types_of_lamps_6"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_lighting_types_of_lamps_6"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/icon_lighting_types_of_lamps"
+                    android:src="@drawable/icon_lighting_types_of_lamps_6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_lighting_types_of_lamps_6" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_description_lighting_types_of_lamps_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_lighting_types_of_lamps_6"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/icon_description_up_down_6"
+                        android:layout_width="48sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_sockets_plugs_down"
+                        android:contentDescription="@string/icon_description_up_down" />
+
+                    <TextView
+                        android:id="@+id/description_lighting_types_of_lamps_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/backgroundGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundYellow">
+
+                <TextView
+                    android:id="@+id/title_lighting_types_of_lamps_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info_title_lighting_types_of_lamps_7"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_lighting_types_of_lamps_7"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/icon_lighting_types_of_lamps"
+                    android:src="@drawable/icon_lighting_types_of_lamps_7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_lighting_types_of_lamps_7" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_description_lighting_types_of_lamps_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_lighting_types_of_lamps_7"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/icon_description_up_down_7"
+                        android:layout_width="48sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_sockets_plugs_down"
+                        android:contentDescription="@string/icon_description_up_down" />
+
+                    <TextView
+                        android:id="@+id/description_lighting_types_of_lamps_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/backgroundGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundYellow">
+
+                <TextView
+                    android:id="@+id/title_lighting_types_of_lamps_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info_title_lighting_types_of_lamps_8"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_lighting_types_of_lamps_8"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/icon_lighting_types_of_lamps"
+                    android:src="@drawable/icon_lighting_types_of_lamps_8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_lighting_types_of_lamps_8" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_description_lighting_types_of_lamps_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_lighting_types_of_lamps_8"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/icon_description_up_down_8"
+                        android:layout_width="48sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_sockets_plugs_down"
+                        android:contentDescription="@string/icon_description_up_down" />
+
+                    <TextView
+                        android:id="@+id/description_lighting_types_of_lamps_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/backgroundGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundYellow">
+
+                <TextView
+                    android:id="@+id/title_lighting_types_of_lamps_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info_title_lighting_types_of_lamps_9"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_lighting_types_of_lamps_9"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/icon_lighting_types_of_lamps"
+                    android:src="@drawable/icon_lighting_types_of_lamps_9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_lighting_types_of_lamps_9" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_description_lighting_types_of_lamps_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_lighting_types_of_lamps_9"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/icon_description_up_down_9"
+                        android:layout_width="48sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_sockets_plugs_down"
+                        android:contentDescription="@string/icon_description_up_down" />
+
+                    <TextView
+                        android:id="@+id/description_lighting_types_of_lamps_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/backgroundGreen"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            app:cardCornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundYellow">
+
+                <TextView
+                    android:id="@+id/title_lighting_types_of_lamps_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/info_title_lighting_types_of_lamps_10"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_lighting_types_of_lamps_10"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/icon_lighting_types_of_lamps"
+                    android:src="@drawable/icon_lighting_types_of_lamps_10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title_lighting_types_of_lamps_10" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_description_lighting_types_of_lamps_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/icon_lighting_types_of_lamps_10"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/icon_description_up_down_10"
+                        android:layout_width="48sp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/ic_info_sockets_plugs_down"
+                        android:contentDescription="@string/icon_description_up_down" />
+
+                    <TextView
+                        android:id="@+id/description_lighting_types_of_lamps_10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
