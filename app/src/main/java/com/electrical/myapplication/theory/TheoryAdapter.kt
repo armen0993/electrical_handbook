@@ -21,6 +21,7 @@ import com.electrical.myapplication.theory.ip_shield.IpShield
 import com.electrical.myapplication.theory.laws_and_regulations.LawsAndRegulations
 import com.electrical.myapplication.theory.lighting.LightingActivity
 import com.electrical.myapplication.theory.power_plants_and_substations.Substations
+import com.electrical.myapplication.theory.protection_and_automation_devices.ProtectionAndAutomationDevicesActivity
 import com.electrical.myapplication.theory.serial_and_parallel_connection.SerialAndParallelConnectionActivity
 import com.electrical.myapplication.theory.short_circuit.ShortCircuitActivity
 import com.electrical.myapplication.theory.sockets_and_plugs.SocketsAndPlugsActivity
@@ -118,6 +119,12 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 val shortCircuitIntent = Intent(context, ShortCircuitActivity::class.java)
                 shortCircuitIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(shortCircuitIntent)
+            }
+            10 -> {
+                val protectionDevices =
+                    Intent(context, ProtectionAndAutomationDevicesActivity::class.java)
+                protectionDevices.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
+                context.startActivity(protectionDevices)
             }
             11 -> {
                 val ipShieldIntent = Intent(context, IpShield::class.java)

@@ -8,9 +8,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
+        <activity android:name=".theory.protection_and_automation_devices.ShowCategoryProtectionAndAutomationDevicesActivity"></activity>
+        <activity android:name=".theory.protection_and_automation_devices.ProtectionAndAutomationDevicesActivity" />
         <activity android:name=".theory.lighting.ShowCategoryLighting" />
-        <activity android:name=".theory.lighting.LightingActivity"/>
-
+        <activity android:name=".theory.lighting.LightingActivity" />
         <activity android:name=".theory.electrical_measuring_instruments.ShowElectricalMeasuringInstrumentsActivity" />
         <activity android:name=".theory.electrical_measuring_instruments.ElectricalMeasuringInstrumentsActivity" />
         <activity android:name=".theory.short_circuit.ShortCircuitActivity" />
@@ -39,8 +40,7 @@
         <activity android:name=".theory.laws_and_regulations.LawsAndRegulations" />
         <activity android:name=".theory.basic_concepts.ShowCategoryBasicConceptsActivity" />
         <activity android:name=".theory.basic_concepts.BasicConcepts" />
-        <activity android:name=".theory.TheoryActivity"/>
-
+        <activity android:name=".theory.TheoryActivity" />
         <activity android:name=".schema.SchemaActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
