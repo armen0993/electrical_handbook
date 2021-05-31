@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivityProtectionAndAutomationDevicesBinding
+
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
 const val CATEGORY_NAME_PROTECTION_DEVICES = "Protection and Automation devices"
