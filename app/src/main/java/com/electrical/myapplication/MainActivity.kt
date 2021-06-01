@@ -1,19 +1,17 @@
 package com.electrical.myapplication
 
 import android.annotation.SuppressLint
-import android.content.DialogInterface
+
 import android.content.Intent
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
+
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Button
+
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+
 import com.electrical.myapplication.databinding.ActivityMainBinding
 import com.electrical.myapplication.schema.SchemaActivity
 import com.electrical.myapplication.table.TableActivity
@@ -28,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.imageExit.setOnClickListener {
+        binding.imageExit?.setOnClickListener {
 
             supportFragmentManager
                 .beginTransaction()
@@ -36,25 +34,25 @@ class MainActivity : AppCompatActivity() {
                 .add(R.id.container, ExitFragment())
                 .commit()
         }
-        binding.imageSchema.clipToOutline
+        binding.imageSchema?.clipToOutline
 
 
 
-        binding.imageCalc.setOnClickListener {
+        binding.imageCalc?.setOnClickListener {
             Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
         }
-        binding.imageSchema.setOnClickListener {
+        binding.imageSchema?.setOnClickListener {
             val intentSchema = Intent(this, SchemaActivity::class.java)
-            intentSchema.putExtra(ACTION_BAR_TITLE,binding.textSchema.text)
+            intentSchema.putExtra(ACTION_BAR_TITLE, binding.textSchema?.text)
             startActivity(intentSchema)
         }
-        binding.imageTheory.setOnClickListener() {
+        binding.imageTheory?.setOnClickListener {
             val intentTheory = Intent(this, TheoryActivity::class.java)
             startActivity(intentTheory)
         }
-        binding.imageTable.setOnClickListener {
+        binding.imageTable?.setOnClickListener {
             val intentTable = Intent(this, TableActivity::class.java)
-            intentTable.putExtra(ACTION_BAR_TITLE,binding.textTable.text)
+            intentTable.putExtra(ACTION_BAR_TITLE, binding.textTable?.text)
             startActivity(intentTable)
         }
 
@@ -100,7 +98,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        overridePendingTransition(R.anim.activity_down_up_close_enter, R.anim.activity_down_up_close_exit)
+        overridePendingTransition(
+            R.anim.activity_down_up_close_enter,
+            R.anim.activity_down_up_close_exit
+        )
 
     }
 }

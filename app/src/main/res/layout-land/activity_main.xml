@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_first_activity_background">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageCalc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_first_activity_calculator"
+        app:layout_constraintEnd_toEndOf="@id/guideline_1"
+        app:layout_constraintStart_toStartOf="@id/guideline_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
+
+    <TextView
+        android:id="@+id/textCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageCalc"
+        app:layout_constraintStart_toEndOf="@+id/imageCalc"
+        app:layout_constraintStart_toStartOf="@+id/imageCalc"
+        app:layout_constraintTop_toBottomOf="@+id/imageCalc" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageTheory"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_3"
+        app:layout_constraintStart_toEndOf="@+id/textStandards"
+        app:layout_constraintStart_toStartOf="@id/guideline_3"
+        app:layout_constraintTop_toTopOf="@id/imageStandards"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity"
+        app:srcCompat="@drawable/ic_first_activity_theory" />
+
+    <TextView
+        android:id="@+id/textTheory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theory"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageTheory"
+        app:layout_constraintStart_toEndOf="@+id/imageTheory"
+        app:layout_constraintStart_toStartOf="@+id/imageTheory"
+        app:layout_constraintTop_toBottomOf="@+id/imageTheory" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageSchema"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:src="@drawable/ic_first_activity_schema"
+        app:layout_constraintEnd_toEndOf="@id/textCalc"
+        app:layout_constraintStart_toStartOf="@id/textCalc"
+        app:layout_constraintTop_toBottomOf="@id/textCalc"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
+
+
+    <TextView
+        android:id="@+id/textSchema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schemes"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageSchema"
+        app:layout_constraintStart_toStartOf="@+id/imageSchema"
+        app:layout_constraintTop_toBottomOf="@+id/imageSchema" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageTable"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/ic_first_activity_table"
+        app:layout_constraintStart_toStartOf="@id/imageStandards"
+        app:layout_constraintTop_toBottomOf="@id/imageStandards"
+        app:layout_constraintTop_toTopOf="@id/imageSchema"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
+
+
+    <TextView
+        android:id="@+id/textTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tables"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageTable"
+        app:layout_constraintStart_toStartOf="@+id/imageTable"
+        app:layout_constraintTop_toBottomOf="@+id/imageTable" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageStandards"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/ic_first_activity_standards"
+        app:layout_constraintEnd_toEndOf="@id/guideline_2"
+        app:layout_constraintStart_toEndOf="@+id/textCalc"
+        app:layout_constraintStart_toStartOf="@id/guideline_2"
+        app:layout_constraintTop_toTopOf="@id/imageCalc"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
+
+    <TextView
+        android:id="@+id/textStandards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/standards"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageStandards"
+        app:layout_constraintStart_toEndOf="@+id/imageStandards"
+        app:layout_constraintStart_toStartOf="@id/imageStandards"
+        app:layout_constraintTop_toBottomOf="@+id/imageStandards" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageBooks"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:clickable="true"
+        android:src="@drawable/ic_first_activity_book"
+        app:layout_constraintStart_toStartOf="@id/imageTheory"
+        app:layout_constraintTop_toBottomOf="@id/textTheory"
+        app:layout_constraintTop_toTopOf="@id/imageTable"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
+
+
+    <TextView
+        android:id="@+id/textBooks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/literature"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageBooks"
+        app:layout_constraintStart_toStartOf="@+id/imageBooks"
+        app:layout_constraintTop_toBottomOf="@+id/imageBooks" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageExit"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_first_activity_exit"
+        app:layout_constraintStart_toStartOf="@id/imageTable"
+        app:layout_constraintTop_toBottomOf="@id/textTable"
+        app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -45,7 +45,6 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
         holder.title.text = valueData.title
         holder.description.text = valueData.description
         holder.imageIcon.setImageResource(valueData.imageIcon)
-
         holder.itemView.setOnClickListener {
             showTheoryCategory(holder.layoutPosition)
 
