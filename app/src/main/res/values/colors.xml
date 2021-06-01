@@ -12,5 +12,9 @@
     <color name="backgroundColor">#52A9ED</color>
     <color name="backgroundYellow">#FAF605</color>
     <color name="backgroundGreen">#0A9500</color>
+    <color name="backgroundBlue">#1E93F1</color>
+    <color name="backgroundRed">#F31616</color>
+    <color name="backgroundBrown">#9F6926</color>
+    <color name="backgroundGrey">#919589</color>
 
 </resources>

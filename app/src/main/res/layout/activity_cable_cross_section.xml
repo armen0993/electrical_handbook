@@ -79,6 +79,23 @@
                 android:layout_marginTop="8dp"
                 android:src="@drawable/ic_table_cable_cross_section_3" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/title_table_cable_cross_section_4"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_table_cable_cross_section_4" />
+
 
         </LinearLayout>
     </ScrollView>

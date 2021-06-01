@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.basic_concepts.BasicConcepts
+import com.electrical.myapplication.theory.cable_and_wires.CableAndWiresActivity
 import com.electrical.myapplication.theory.earthing_systems.EarthingSystemsActivity
 import com.electrical.myapplication.theory.electrical_measuring_instruments.ElectricalMeasuringInstrumentsActivity
 import com.electrical.myapplication.theory.electrician_tools.ElectricianToolsActivity
@@ -88,7 +89,11 @@ class TheoryAdapter(private val context: Context, private val dataTheory: List<T
                 val lightingIntent = Intent(context, LightingActivity::class.java)
                 lightingIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
                 context.startActivity(lightingIntent)
-
+            }
+            4 -> {
+                val cableAndWiresIntent = Intent(context, CableAndWiresActivity::class.java)
+                cableAndWiresIntent.putExtra(ACTION_BAR_TITLE, dataTheory[position].title)
+                context.startActivity(cableAndWiresIntent)
             }
             5 -> {
                 val substationsIntent = Intent(context, Substations::class.java)
