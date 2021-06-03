@@ -6,9 +6,7 @@ import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.electrical.myapplication.R
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
-import com.electrical.myapplication.theory.lighting.CATEGORY_LIGHTING_INCANDESCENT_LAMP
-import com.electrical.myapplication.theory.lighting.CATEGORY_NAME_LIGHTING
-import com.electrical.myapplication.theory.lighting.ShowIncandescentLampFragment
+
 
 class ShowCategoryCable : AppCompatActivity() {
     private var savedInstanceStateFragment: Bundle? = null

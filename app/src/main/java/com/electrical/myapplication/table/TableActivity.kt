@@ -1,5 +1,6 @@
 package com.electrical.myapplication.table
 
+import android.graphics.pdf.PdfDocument
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.ActivityTableBinding
 import com.electrical.myapplication.theory.ACTION_BAR_TITLE
+import java.io.FileInputStream
 
 class TableActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,4 +43,6 @@ class TableActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+    val pdf = PdfDocument()
+
 }

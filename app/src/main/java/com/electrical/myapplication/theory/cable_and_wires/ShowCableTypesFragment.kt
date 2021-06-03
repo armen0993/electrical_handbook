@@ -23,7 +23,7 @@ class ShowCableTypesFragment : Fragment() {
         val recyclerCableTypes: RecyclerView =
             view.findViewById(R.id.container_recycler_cable_types)
 
-        val listData = listOf(
+        val listDataCableTypes = listOf(
             CableTypesData(
                 getString(R.string.info_title_cable_types),
                 getString(R.string.info_description_cable_types),
@@ -106,7 +106,7 @@ class ShowCableTypesFragment : Fragment() {
             ),
         )
 
-        val adapterCableType = CableTypesAdapter(requireContext(), listData)
+        val adapterCableType = CableTypesAdapter(requireContext(), listDataCableTypes)
         recyclerCableTypes.adapter = adapterCableType
         recyclerCableTypes.layoutManager = LinearLayoutManager(requireContext())
 
