@@ -58,7 +58,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintEnd_toEndOf="@id/guideline_3"
-        app:layout_constraintStart_toEndOf="@+id/textStandards"
+        app:layout_constraintStart_toEndOf="@+id/text_installation_of_wiring_in_house"
         app:layout_constraintStart_toStartOf="@id/guideline_3"
         app:layout_constraintTop_toTopOf="@id/imageStandards"
         app:shapeAppearanceOverlay="@style/style_icon_first_activity"
@@ -134,7 +134,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:clickable="true"
-        android:src="@drawable/ic_first_activity_standards"
+        android:src="@drawable/ic_first_activity_installation_of_wiring_in_house"
         app:layout_constraintEnd_toEndOf="@id/guideline_2"
         app:layout_constraintStart_toEndOf="@+id/textCalc"
         app:layout_constraintStart_toStartOf="@id/guideline_2"
@@ -142,10 +142,10 @@
         app:shapeAppearanceOverlay="@style/style_icon_first_activity" />
 
     <TextView
-        android:id="@+id/textStandards"
+        android:id="@+id/text_installation_of_wiring_in_house"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/standards"
+        android:text="@string/text_installation_of_wiring_in_house"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"

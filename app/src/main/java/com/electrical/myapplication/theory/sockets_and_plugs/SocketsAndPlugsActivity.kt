@@ -36,20 +36,7 @@ class SocketsAndPlugsActivity : AppCompatActivity() {
             setDisplayHomeAsUpEnabled(true)
         }
 
-        bindingSockets.iconDescriptionUpDown.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown1.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown2.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown3.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown4.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown5.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown6.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown7.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown8.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown9.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown10.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown11.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown12.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
-        bindingSockets.iconDescriptionUpDown13.setBackgroundResource(R.drawable.ic_info_sockets_plugs_down)
+
 
         bindingSockets.layoutDescriptionSocketPlugs.setOnClickListener {
             if (countClick % 2 == 0) {

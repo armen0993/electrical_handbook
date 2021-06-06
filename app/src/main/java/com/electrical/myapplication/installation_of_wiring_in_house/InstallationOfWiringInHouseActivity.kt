@@ -1,22 +1,15 @@
-package com.electrical.myapplication.theory
-
+package com.electrical.myapplication.installation_of_wiring_in_house
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-
 import android.view.MenuItem
-
-import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.electrical.myapplication.R
-import com.electrical.myapplication.databinding.ActivityTheoryBinding
+import com.electrical.myapplication.theory.ACTION_BAR_TITLE
 
-class TheoryActivity : AppCompatActivity() {
+class InstallationOfWiringInHouseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        val bindingTheory = ActivityTheoryBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        setContentView(bindingTheory.root)
+        setContentView(R.layout.activity_installation_of_wiring_in_house)
 
         title = intent.getStringExtra(ACTION_BAR_TITLE)
         val actionBarShow: androidx.appcompat.app.ActionBar? = supportActionBar
@@ -24,16 +17,6 @@ class TheoryActivity : AppCompatActivity() {
             setHomeButtonEnabled(true)
             setDisplayHomeAsUpEnabled(true)
         }
-
-        val theoryViewModel = ViewModelProvider(this).get(TheoryViewModel::class.java)
-        theoryViewModel.createDataListTheory(this)
-        theoryViewModel.dataListTheory.observe(this, {
-
-            val adapterTheory = TheoryAdapter(this, it)
-            val recyclerTheory: RecyclerView = bindingTheory.recyclerTheory
-            recyclerTheory.adapter = adapterTheory
-            recyclerTheory.layoutManager = LinearLayoutManager(this)
-        })
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -45,13 +28,11 @@ class TheoryActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
     override fun onPause() {
         super.onPause()
         overridePendingTransition(
             R.anim.activity_down_up_close_enter,
             R.anim.activity_down_up_close_exit
         )
-
     }
 }
