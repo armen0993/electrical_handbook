@@ -23,6 +23,7 @@ class ExitFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val btnYes = view.findViewById<Button>(R.id.buttonYes)
         val btnNo = view.findViewById<Button>(R.id.buttonNo)
+
         btnYes.setOnClickListener {
             this.activity?.finish()
             exitProcess(0)

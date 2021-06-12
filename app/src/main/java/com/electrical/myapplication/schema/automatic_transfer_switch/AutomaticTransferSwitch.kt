@@ -18,7 +18,12 @@ class AutomaticTransferSwitch : AppCompatActivity() {
                 setHomeButtonEnabled(true)
                 setDisplayHomeAsUpEnabled(true)
             }
+
         }
+
+
+
+
 
         override fun onOptionsItemSelected(item: MenuItem): Boolean {
             when (item.itemId) {

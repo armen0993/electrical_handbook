@@ -28,7 +28,6 @@ class TheoryActivity : AppCompatActivity() {
         val theoryViewModel = ViewModelProvider(this).get(TheoryViewModel::class.java)
         theoryViewModel.createDataListTheory(this)
         theoryViewModel.dataListTheory.observe(this, {
-
             val adapterTheory = TheoryAdapter(this, it)
             val recyclerTheory: RecyclerView = bindingTheory.recyclerTheory
             recyclerTheory.adapter = adapterTheory

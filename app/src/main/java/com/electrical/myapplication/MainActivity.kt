@@ -9,9 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-
 import android.widget.Toast
-
 import com.electrical.myapplication.databinding.ActivityMainBinding
 import com.electrical.myapplication.installation_of_wiring_in_house.InstallationOfWiringInHouseActivity
 import com.electrical.myapplication.schema.SchemaActivity
@@ -28,19 +26,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.imageExit.setOnClickListener {
-
             supportFragmentManager
                 .beginTransaction()
                 .addToBackStack("exit")
                 .add(R.id.container, ExitFragment())
                 .commit()
+
         }
-        binding.imageSchema.clipToOutline
-
-
 
         binding.imageCalc.setOnClickListener {
-            Toast.makeText(this, "Selected", Toast.LENGTH_SHORT).show()
+
         }
         binding.imageSchema.setOnClickListener {
             val intentSchema = Intent(this, SchemaActivity::class.java)
@@ -49,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         }
         binding.imageTheory.setOnClickListener {
             val intentTheory = Intent(this, TheoryActivity::class.java)
-            intentTheory.putExtra(ACTION_BAR_TITLE,binding.textTheory.text)
+            intentTheory.putExtra(ACTION_BAR_TITLE, binding.textTheory.text)
             startActivity(intentTheory)
         }
         binding.imageTable.setOnClickListener {
