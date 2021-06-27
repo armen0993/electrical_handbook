@@ -18,5 +18,10 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">24dp</item>
     </style>
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/backgroundGreen</item>
+        <item name="colorControlActivated">@color/backgroundRed</item>
+    </style>
+
 
 </resources>

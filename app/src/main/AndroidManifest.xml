@@ -3,13 +3,15 @@
     package="com.electrical.myapplication">
 
     <application
+        android:name=".ApplicationElectricianHandbook"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
-        <activity android:name=".installation_of_wiring_in_house.InstallationOfWiringInHouseActivity"></activity>
-        <activity android:name=".standards.StandardsActivity" />
+        <activity android:name=".calculator.ShowCalculatorCategoryActivity"></activity>
+        <activity android:name=".calculator.CalculatorActivity" />
+        <activity android:name=".installation_of_wiring_in_house.InstallationOfWiringInHouseActivity" />
         <activity android:name=".theory.cable_and_wires.ShowCategoryCable" />
         <activity android:name=".theory.cable_and_wires.CableAndWiresActivity" />
         <activity android:name=".theory.protection_and_automation_devices.ShowCategoryProtectionAndAutomationDevicesActivity" />
@@ -48,8 +50,7 @@
         <activity android:name=".schema.SchemaActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>

@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_calculate_cable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/title_calculate_cable"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/text_calculate_cable_voltage"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_calculate_cable" />
+
+        <Spinner
+            android:id="@+id/spinner_calculate_cable_voltage_type"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/spinner_style_calculate"
+            android:entries="@array/info_calculate_cable_voltage"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_voltage"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_voltage"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_voltage" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_calculate_cable_type"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_voltage"
+            app:layout_constraintTop_toBottomOf="@id/spinner_calculate_cable_voltage_type" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_calculate_cable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type">
+
+            <RadioButton
+                android:id="@+id/radio_button_copper"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/text_calculate_cup"
+                android:textColor="@color/backgroundGreen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radio_button_aluminum"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="@string/text_calculate_aluminium"
+                android:textColor="@color/backgroundGreen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_calculate_cable_type_1"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/radio_group_calculate_cable"
+            app:layout_constraintTop_toBottomOf="@id/radio_group_calculate_cable" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_calculate_cable_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_1"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_1">
+
+            <RadioButton
+                android:id="@+id/radio_button_open"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/text_calculate_open"
+                android:textColor="@color/backgroundGreen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton" />
+
+            <RadioButton
+                android:id="@+id/radio_button_close"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="@string/text_calculate_close"
+                android:textColor="@color/backgroundGreen"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:theme="@style/MyRadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_calculate_cable_type_2"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/radio_group_calculate_cable_1"
+            app:layout_constraintTop_toBottomOf="@id/radio_group_calculate_cable_1" />
+
+        <Spinner
+            android:id="@+id/spinner_calculate_cable_current_type"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/spinner_style_calculate"
+            android:entries="@array/info_calculate_cable_current"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_2"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_2"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_2" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/i_current"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_2"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_2" />
+
+        <EditText
+            android:id="@+id/edit_text_calculate_current"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:autofillHints="current_inputs"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_3"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_3"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_3"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/text_calculate_current_type"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_calculate_current_type"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_calculate_current"
+            app:layout_constraintStart_toEndOf="@id/edit_text_calculate_current"
+            app:layout_constraintTop_toTopOf="@id/edit_text_calculate_current" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/p_power"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_2"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_2" />
+
+        <EditText
+            android:id="@+id/edit_text_calculate_power"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:autofillHints="power_inputs"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_3"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_3"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_3"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/text_calculate_power_type"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_calculate_power_type"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_calculate_power"
+            app:layout_constraintStart_toEndOf="@id/edit_text_calculate_power"
+            app:layout_constraintTop_toTopOf="@id/edit_text_calculate_power" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_calculate_cable_type_5"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_4"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_4" />
+
+        <EditText
+            android:id="@+id/edit_text_calculate_loss"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="loss"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_5"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_5"
+            app:layout_constraintStart_toStartOf="@id/edit_text_calculate_current"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_5"
+            tools:ignore="LabelFor" />
+
+        <Spinner
+            android:id="@+id/spinner_calculate_cable_loss_type"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:background="@drawable/spinner_style_calculate"
+            android:entries="@array/info_calculate_cable_loss_type"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_calculate_loss"
+            app:layout_constraintStart_toEndOf="@id/edit_text_calculate_loss"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_current_type"
+            app:layout_constraintTop_toTopOf="@id/edit_text_calculate_loss" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_calculate_cable_length"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_5"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_5" />
+
+        <EditText
+            android:id="@+id/edit_text_calculate_cable_length"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="loss"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="4"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_6"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_6"
+            app:layout_constraintStart_toStartOf="@id/edit_text_calculate_current"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_6"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_length_type"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_calculate_cable_length_type_meter"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_calculate_cable_length"
+            app:layout_constraintStart_toEndOf="@id/edit_text_calculate_cable_length"
+            app:layout_constraintTop_toTopOf="@id/edit_text_calculate_cable_length" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_calculate_cable_temperature"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_6"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_6" />
+
+        <EditText
+            android:id="@+id/edit_text_calculate_cable_temperature"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="loss"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_7"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_7"
+            app:layout_constraintStart_toStartOf="@id/edit_text_calculate_cable_length"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_7"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_temperature_type"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_calculate_cable_celsius"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edit_text_calculate_cable_temperature"
+            app:layout_constraintStart_toEndOf="@id/edit_text_calculate_cable_temperature"
+            app:layout_constraintTop_toTopOf="@id/edit_text_calculate_cable_temperature" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/text_calculate_cable_cosine"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_7"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_7" />
+
+        <EditText
+            android:id="@+id/edit_text_calculate_cable_power_cosine"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="loss"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:inputType="numberDecimal"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/text_calculate_cable_type_8"
+            app:layout_constraintStart_toEndOf="@id/text_calculate_cable_type_8"
+            app:layout_constraintStart_toStartOf="@id/edit_text_calculate_cable_temperature"
+            app:layout_constraintTop_toTopOf="@id/text_calculate_cable_type_8"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_calculate_cable_result"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_8" />
+
+        <TextView
+            android:id="@+id/text_calculate_cable_type_result"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/spinner_style_calculate"
+            android:gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_9" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:background="@drawable/spinner_style_calculate"
+            android:text="@string/ok"
+            android:textColor="@color/backgroundGreen"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/text_calculate_cable_type_result"
+            app:layout_constraintStart_toStartOf="@id/text_calculate_cable_type_result"
+            app:layout_constraintTop_toBottomOf="@id/text_calculate_cable_type_result" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

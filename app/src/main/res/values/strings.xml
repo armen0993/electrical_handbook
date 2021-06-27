@@ -1511,5 +1511,39 @@
     <string name="info_title_wiring_in_house_4">Монтаж элементов распределительного щита</string>
     <string name="info_description_wiring_in_house_5">После того, как схема подключения электричества в частном доме подобрана, а потребители разделены на группы, монтируется распределительный щит. В нем располагаются:
 \n\n. автомат защиты и УЗО – общие;\n. автоматы и УЗО – для выделенных групп;\n. счетчик;\n. нулевая шина и главная заземляющая шина.\n\n<b>На щите функцию жилы можно определить по цвету ее изоляции:</b>\n\n. белая (иногда красная, черная или коричневая) соответствует фазе;\n. синяя – нулю;\n. желто-зеленая – защитному заземлению.\n\nОкончательно распределительный щит для электропроводки в частном доме собирают после того, как закончен монтаж проводки.</string>
+    <string name="title_calculate_cable">Выбор сечения провода</string>
+    <string name="text_calculate_cable_voltage">Напряжение сети:</string>
+    <string name="text_calculate_cable_type">Материал изготовления провода:</string>
+    <string name="text_calculate_cable_type_1">Способ прокладки кабеля</string>
+    <string name="text_calculate_cup">Медь</string>
+    <string name="text_calculate_aluminium">Алюминий</string>
+    <string name="text_calculate_open">Открыто</string>
+    <string name="text_calculate_close">В трубе</string>
+    <string name="text_calculate_cable_type_2">Рассчет выполнить по :</string>
+    <string name="i_current">I:</string>
+    <string name="p_power">P:</string>
+    <string name="text_calculate_current_type">A</string>
+    <string name="text_calculate_power_type">kW</string>
+    <string name="text_calculate_cable_type_5">Потери:</string>
+    <string name="text_calculate_cable_length">Длина:</string>
+    <string name="text_calculate_cable_length_type_meter">М</string>
+    <string name="text_calculate_cable_temperature">t:</string>
+    <string name="text_calculate_cable_celsius">°C</string>
+    <string name="text_calculate_cable_cosine">cos φ:</string>
+    <string name="text_calculate_cable_result">Стандартное сечение:</string>
+    <string name="ok">OK</string>
+    <string-array name="info_calculate_cable_voltage">
+        <item>220В</item>
+        <item>380В</item>
+    </string-array>
+    <string-array name="info_calculate_cable_current">
+        <item>Ток</item>
+        <item>Мошность</item>
+    </string-array>
+    <string-array name="info_calculate_cable_loss_type">
+        <item>%</item>
+        <item>V</item>
+    </string-array>
+
 
 </resources>

@@ -10,6 +10,8 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatToggleButton
+import com.electrical.myapplication.calculator.CalculatorActivity
 import com.electrical.myapplication.databinding.ActivityMainBinding
 import com.electrical.myapplication.installation_of_wiring_in_house.InstallationOfWiringInHouseActivity
 import com.electrical.myapplication.schema.SchemaActivity
@@ -35,6 +37,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.imageCalc.setOnClickListener {
+            val intentCalculator = Intent(this, CalculatorActivity::class.java)
+            intentCalculator.putExtra(ACTION_BAR_TITLE, binding.textCalc.text)
+            startActivity(intentCalculator)
 
         }
         binding.imageSchema.setOnClickListener {
