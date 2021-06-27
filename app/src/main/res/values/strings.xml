@@ -1531,7 +1531,7 @@
     <string name="text_calculate_cable_celsius">°C</string>
     <string name="text_calculate_cable_cosine">cos φ:</string>
     <string name="text_calculate_cable_result">Стандартное сечение:</string>
-    <string name="ok">OK</string>
+    <string name="result">Рассчитать</string>
     <string-array name="info_calculate_cable_voltage">
         <item>220В</item>
         <item>380В</item>

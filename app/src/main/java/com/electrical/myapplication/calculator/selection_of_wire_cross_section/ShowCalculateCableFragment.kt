@@ -2,14 +2,15 @@ package com.electrical.myapplication.calculator.selection_of_wire_cross_section
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.Toast
+import androidx.core.util.rangeTo
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.electrical.myapplication.R
 import com.electrical.myapplication.databinding.FragmentShowCalculateCableBinding
 
 
@@ -24,7 +25,9 @@ class ShowCalculateCableFragment : Fragment() {
     private var inputLose: Double = 0.0                      // input number lose
     private var inputLength: Double = 0.0                     // input number length
     private var inputTemperature: Double = 0.0                 // input number temperature
-    private var inputCosine: Double = 0.0                        // input number cos φ
+    private var inputCosine: Double = 0.0
+    private var losType = true                                 // true = %  false = voltage
+    // input number cos φ
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,8 +45,9 @@ class ShowCalculateCableFragment : Fragment() {
         val vieModelCalculateCable =
             ViewModelProvider(this).get(CalculateCableViewModel::class.java)
 
-        vieModelCalculateCable.liveDataResult.observe(viewLifecycleOwner,  {
-            bindingCalculateCable.textCalculateCableTypeResult.text = "S = $it мм²\n D = ${vieModelCalculateCable.getDiameter()} мм"
+        vieModelCalculateCable.liveDataResult.observe(viewLifecycleOwner, {
+            bindingCalculateCable.textCalculateCableTypeResult.text =
+                "S = $it мм²\n D = ${vieModelCalculateCable.getDiameter()} мм"
         })
 
         bindingCalculateCable.spinnerCalculateCableVoltageType.onItemSelectedListener = object :
@@ -67,6 +71,26 @@ class ShowCalculateCableFragment : Fragment() {
             }
 
         }
+        bindingCalculateCable.spinnerCalculateCableLossType.onItemSelectedListener = object :
+            AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                when (bindingCalculateCable.spinnerCalculateCableLossType.selectedItem.toString()) {
+                    "%" -> losType = true
+
+                    "V" -> losType = false
+                }
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+        }
+
 
 // radio button isClicked
         bindingCalculateCable.radioButtonClose.setOnClickListener {
@@ -145,12 +169,18 @@ class ShowCalculateCableFragment : Fragment() {
                         bindingCalculateCable.editTextCalculateCableTemperature.text.toString()
                             .toDouble()
 
-                  vieModelCalculateCable.setParameterIsCurrent(voltageType,isCheckedMaterial,
-                  isCheckedType,currentType,inputCurrent,inputLose,inputLength,inputTemperature)
+                    vieModelCalculateCable.setParameterIsCurrent(
+                        voltageType,
+                        isCheckedMaterial,
+                        isCheckedType,
+                        currentType,
+                        inputCurrent,
+                        inputLose,
+                        inputLength,
+                        inputTemperature,
+                        losType
+                    )
                     vieModelCalculateCable.getResultLogic()
-
-
-
 
 
                 } else {
@@ -178,18 +208,42 @@ class ShowCalculateCableFragment : Fragment() {
                     inputCosine =
                         bindingCalculateCable.editTextCalculateCablePowerCosine.text.toString()
                             .toDouble()
-                    vieModelCalculateCable.setParameterIsPower(voltageType,isCheckedMaterial,
-                        isCheckedType,currentType,inputPower,inputLose,inputLength,inputTemperature,
-                    inputCosine)
-                    vieModelCalculateCable.setParameterIsPower(voltageType,isCheckedMaterial,
-                        isCheckedType,currentType,inputPower,inputLose,inputLength,inputTemperature,
-                        inputCosine)
-                    vieModelCalculateCable.getResultLogic()
-                    Log.d("Tag","$isCheckedMaterial")
+                    when (bindingCalculateCable.editTextCalculateCablePowerCosine.text.toString()
+                        .toDouble()) {
+                        in 0.1 rangeTo 1.0 -> {
+                            vieModelCalculateCable.setParameterIsPower(
+                                voltageType,
+                                isCheckedMaterial,
+                                isCheckedType,
+                                currentType,
+                                inputPower,
+                                inputLose,
+                                inputLength,
+                                inputTemperature,
+                                inputCosine,
+                                losType
+                            )
+
+                            vieModelCalculateCable.getResultLogic()
+                        }
+                        else -> {
+                            Toast.makeText(
+                                context,
+                                "${resources.getString(R.string.text_calculate_cable_cosine)} должно бить 0.1 до 1",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
                 } else {
-                    Toast.makeText(context, "Пожалуйста ввидите все поля !!", Toast.LENGTH_SHORT)
+                    Toast.makeText(
+                        context,
+                        "Пожалуйста ввидите все поля !!",
+                        Toast.LENGTH_SHORT
+                    )
                         .show()
                 }
+
+
             }
         }
     }

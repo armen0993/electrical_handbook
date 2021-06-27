@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectricianHandbook">
-        <activity android:name=".calculator.ShowCalculatorCategoryActivity"></activity>
+        <activity
+            android:name=".calculator.ShowCalculatorCategoryActivity"
+            android:screenOrientation="nosensor"
+            android:configChanges="keyboardHidden|orientation"/>
         <activity android:name=".calculator.CalculatorActivity" />
         <activity android:name=".installation_of_wiring_in_house.InstallationOfWiringInHouseActivity" />
         <activity android:name=".theory.cable_and_wires.ShowCategoryCable" />
